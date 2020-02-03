@@ -1,0 +1,23 @@
+@mixin flex {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+@mixin mobile-container {
+  margin: 0 auto;
+  max-width: $mobile-content-size;
+  width: 100%;
+}
+
+@mixin tablet-container {
+  margin: 0 auto;
+  max-width: $tablet-content-size;
+  width: 100%;
+}
+
+@mixin desktope-container {
+  margin: 0 auto;
+  max-width: $desktope-content-size;
+  width: 100%;
+}

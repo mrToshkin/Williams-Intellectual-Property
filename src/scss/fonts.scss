@@ -1,0 +1,43 @@
+@font-face {
+  font-weight: 700;
+  font-family: "Playfair Display"; // "Times New Roman", "Times", serif;
+  font-style: normal;
+  font-display: swap;
+
+  src:
+    url("../fonts/PlayfairDisplay-Bold.woff2") format("woff2"),
+    url("../fonts/PlayfairDisplay-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: "Roboto"; // "Arial", "Helvetica", sans-serif;
+  font-style: bold;
+  font-display: swap;
+
+  src:
+    url("../fonts/Roboto-Regular.woff2") format("woff2"),
+    url("../fonts/Roboto-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: "Signika"; // "Arial", "Helvetica", sans-serif;
+  font-style: bold;
+  font-display: swap;
+
+  src:
+    url("../fonts/Signika-Regular.woff2") format("woff2"),
+    url("../fonts/Signika-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 600;
+  font-family: "Signika"; // "Arial", "Helvetica", sans-serif;
+  font-style: bold;
+  font-display: swap;
+
+  src:
+    url("../fonts/Signika-SemiBold.woff2") format("woff2"),
+    url("../fonts/Signika-SemiBold.woff") format("woff");
+}

@@ -1,0 +1,32 @@
+- var desktope  = 1248
+- var tablet = 768
+- var retina = true
+
+mixin icon(name,mod)
+  if(mod)
+    svg(class="svg-sprite-icon icon-" + name + ' ' + mod)
+      use(xlink:href="img/svg/sprite.svg#" + name)
+  else
+    svg(class="svg-sprite-icon icon-" + name)
+      use(xlink:href="img/svg/sprite.svg#" + name)
+
+//- mobile-first. (--desktope, --tablet, --phone)x2 retina, x2 webp = 12 pics
+//- (!) .webp is default exist
+//- img/file--desktope@x2.format
+mixin img(file,format,classname,alttext,retina)
+  if(retina)
+    picture
+      source(type="image/webp" media="(min-width: "+desktope+"px)" srcset="img/"+file+"--desktope.webp 1x, img/"+file+"--desktope@2x.webp 2x")
+      source(media="(min-width: "+desktope+"px)" srcset="img/"+file+"--desktope."+format+" 1x, img/"+file+"--desktope@2x."+format+" 2x")
+      source(type="image/webp" media="(min-width: "+tablet+"px)" srcset="img/"+file+"--tablet.webp 1x, img/"+file+"--tablet@2x.webp 2x")
+      source(media="(min-width: "+tablet+"px)" srcset="img/"+file+"--tablet."+format+" 1x, img/"+file+"--tablet@2x."+format+" 2x")
+      source(type="image/webp" media="(max-width: "+(tablet-1)+"px)" srcset="img/"+file+"--phone.webp 1x, img/"+file+"--phone@2x.webp 2x")
+      img(class=""+classname src="img/"+file+"--phone."+format srcset="img/"+file+"--phone@2x."+format+" 2x" alt=""+alttext)
+  else
+    picture
+      source(type="image/webp" media="(min-width: "+desktope+"px)" srcset="img/"+file+"--desktope.webp")
+      source(media="(min-width: "+desktope+"px)" srcset="img/"+file+"--desktope."+format+" 1x")
+      source(type="image/webp" media="(min-width: "+tablet+"px)" srcset="img/"+file+"--tablet.webp 1x")
+      source(media="(min-width: "+tablet+"px)" srcset="img/"+file+"--tablet."+format+" 1x")
+      source(type="image/webp" media="(max-width: "+(tablet-1)+"px)" srcset="img/"+file+"--phone.webp 1x")
+      img(class=""+classname src="img/"+file+"--phone."+format alt=""+alttext)
