@@ -1,0 +1,12 @@
+.header__social-icons {
+  @media (max-width: $tablet-1) {
+    display: none;
+  }
+}
+
+.social-icons-link {
+  fill: $white;
+  &:hover {
+    fill-opacity: 0.5;
+  }
+}

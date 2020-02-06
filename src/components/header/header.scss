@@ -1,1 +1,33 @@
 header { flex: 0 0 auto; }
+
+.header__article br {
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.icon-anchor {
+  position: relative;
+
+  width: 22px;
+  height: 36px;
+
+  box-sizing: border-box;
+  border: 2px solid #FFFFFF;
+  border-radius: 25px;
+
+  &__element {
+    position: absolute;
+    left: 8px;
+    top: 7px;
+
+    height: 10px;
+    width: 0;
+
+    border: 1px solid #FFFFFF;
+  }
+  &:hover {
+    cursor: pointer;
+    opacity: 0.5;
+  }
+}

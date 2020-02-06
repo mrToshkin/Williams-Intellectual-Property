@@ -1,0 +1,9 @@
+.link{
+  background-color: $bgc-link;
+    &--active{
+      background-color: $bgc-main;
+    }
+    &:hover{
+      background-color: $bgc-link-hover;
+    }
+}

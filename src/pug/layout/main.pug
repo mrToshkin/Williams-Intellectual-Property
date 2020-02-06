@@ -25,15 +25,16 @@ html(lang="en")
     script(src="js/libs.min.js" defer)
     script(src="js/script.min.js" defer)
     //- #FIXME не находит по вызову функцию svg4everybody()
-    script svg4everybody();
+    //- script svg4everybody();
     <!--[if lt IE 9]>
     script(src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js")
     <![endif]-->
   body
-    .wrapper
-      include ../../components/header/header
-      .content
-        block content
-      include ../../components/footer/footer
-    block script
+    div(class=""+PageHeaderBackground)
+      div.container
+        block header
+        .content
+          block content
+        include ../../components/footer/footer
+      block script
     noscript Ваш браузер не поддерживает скрипты

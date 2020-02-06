@@ -5,25 +5,27 @@ $bgc-page: #050713;
 $bgc-mobile-menu: rgba(1, 23, 45, 0.95);
 $bgc-element: rgba(27, 49, 75, 0.75);
 $bgc-element-button: #2D3A52;
-$bgc-menu-button-active: #E7CC89;
-$bgc-menu-button: #0E1420;
+$bgc-link: #0E1420;
+$bgc-link-hover: #E7CC89;
 $bgc-notification: #FFEFC5;
-$color-hover: #FFE195;
+$color-main: #FFE195; //link active
 $color-img-hover: rgba(255, 225, 149, 0.6);
 
 // Sizes
 $base-font-size: 16px;
 
 // Breakpoints
-$tablet-breakpoint: 768px;
-$desktope-breakpoint: 1400px;
+$tablet: 768px;
+$tablet-1: 767px;
+$desktope: 1400px;
+$desktope-1: 1399px;
 
 // Containers
-$mobile-content-size: 280px;
-$tablet-content-size: 630px;
-$desktope-content-size: 1180px;
+$mobile-container: 280px;
+$tablet-container: 630px;
+$desktope-container: 1180px;
 
 // Fonts
-$playfair: "Playfair Display", "Times New Roman", "Times", serif;
-$roboto: "Roboto", "Arial", "Helvetica", sans-serif;
-$signika: "Signika", "Arial", "Helvetica", sans-serif;
+$font-head: "Playfair Display", "Times New Roman", "Times", serif;
+$font-article: "Signika", "Arial", "Helvetica", sans-serif;
+$font-note: "Roboto", "Arial", "Helvetica", sans-serif;

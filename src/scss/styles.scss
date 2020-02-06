@@ -3,6 +3,7 @@
 @import "mixins";
 @import "fonts";
 
+//------------------GENERAL-------------------//
 html {
   font-size: $base-font-size;
   height: 100%;
@@ -17,30 +18,19 @@ body {
   color: $white;
 }
 
-*,
-*::before,
-*::after { box-sizing: border-box; }
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 
-ul[class],
-ol[class] {
+ul[class], ol[class] {
   list-style: none;
   padding: 0;
 }
 
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-ul[class],
-ol[class],
-li,
-figure,
-figcaption,
-blockquote,
-dl,
-dd { margin: 0; }
+body, h1, h2, h3, h4, p, ul[class], ol[class],
+li, figure, figcaption, blockquote, dl, dd { 
+  margin: 0;
+}
 
 a { text-decoration: none; }
 a:not([class]) { text-decoration-skip-ink: auto; }
@@ -51,10 +41,7 @@ img {
   display: block;
 }
 
-input,
-button,
-textarea,
-select { font: inherit; }
+input, button, textarea, select { font: inherit; }
 
 /* Удаляем все анимации и переходы для людей, которые предпочитают их не использовать */
 @media (prefers-reduced-motion: reduce) {
@@ -94,5 +81,25 @@ input[type="file"].visually-hidden {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+//------------------FONTS-------------------//
+h1, h2, h3, h4 { font-family: $font-head; }
+p { font-family: $font-article; }
+
+//------------------RPOJECT-------------------//
+.container {
+
+  width: $mobile-container;
+  margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    width: $tablet-container;
+  }
+
+  @media (min-width: $desktope) {
+    width: $desktope-container;
+  }
+}
+
 
 @import "../components/components.scss";

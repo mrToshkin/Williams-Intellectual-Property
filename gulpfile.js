@@ -120,36 +120,36 @@ gulp.task('webp', () => {
 gulp.task('svg', () => {
   return gulp.src('./src/img/svg/*.svg')
     .pipe(svgmin({js2svg:{pretty: true}}))
-    /* .pipe(cheerio({ run: function ($) {
+    .pipe(cheerio({ run: function ($) {
         $('[fill]').removeAttr('fill');
         $('[stroke]').removeAttr('stroke');
         $('[style]').removeAttr('style');
       },parserOptions: {xmlMode: true}}))
-    .pipe(replace('&gt;', '>')) */
+    .pipe(replace('&gt;', '>'))
     .pipe(gulp.dest('./build/img/svg'));
 });
 gulp.task('sprite', () => {
-  return gulp.src('./src/img/svg/icons/**/icon-*.svg')
+  return gulp.src('./src/img/svg/icons/**/*.svg')
     .pipe(svgmin({js2svg:{pretty: true}}))
-    /* .pipe(cheerio({ run: function ($) {
+    .pipe(cheerio({ run: function ($) {
         $('[fill]').removeAttr('fill');
         $('[stroke]').removeAttr('stroke');
         $('[style]').removeAttr('style');
       },parserOptions: {xmlMode: true}}))
-    .pipe(replace('&gt;', '>')) */
+    .pipe(replace('&gt;', '>'))
     .pipe(svgstore({inLineSvg: true}))
     .pipe(rename('sprite.svg'))
     .pipe(gulp.dest('./build/img/svg'));
 });
 gulp.task('sprite:social', () => {
-  return gulp.src('./src/img/svg/icons/**/icon_article_social-*.svg')
+  return gulp.src('./src/img/svg/icons-article/**/*.svg')
     .pipe(svgmin({js2svg:{pretty: true}}))
-    /* .pipe(cheerio({ run: function ($) {
+    .pipe(cheerio({ run: function ($) {
         $('[fill]').removeAttr('fill');
         $('[stroke]').removeAttr('stroke');
         $('[style]').removeAttr('style');
       },parserOptions: {xmlMode: true}}))
-    .pipe(replace('&gt;', '>')) */
+    .pipe(replace('&gt;', '>'))
     .pipe(svgstore({inLineSvg: true}))
     .pipe(rename('sprite-article-social.svg'))
     .pipe(gulp.dest('./build/img/svg'));
@@ -178,10 +178,10 @@ gulp.task('clean:fonts', () => {
 
 gulp.task('watch', () => {
   browserSync.init({server: {baseDir: './build'}});
-  gulp.watch('./src/scss/**/*.scss', gulp.series('scss'));
+  gulp.watch('./src/**/*.scss', gulp.series('scss')).on('change', browserSync.reload);
   gulp.watch('./src/js/*.js', gulp.series('js'));
   gulp.watch('./src/js/fills/*.js', gulp.series('js:fills'));
-  gulp.watch('./src/pug/**/*.pug', gulp.series('pug')).on('change', browserSync.reload);
+  gulp.watch('./src/**/*.pug', gulp.series('pug')).on('change', browserSync.reload);
   gulp.watch('./src/fonts/**', gulp.series('fonts'));
 });
 
