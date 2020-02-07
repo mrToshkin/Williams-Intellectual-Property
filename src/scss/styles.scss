@@ -5,17 +5,15 @@
 
 //------------------GENERAL-------------------//
 html {
-  font-size: $base-font-size;
   height: 100%;
+  font-size: $base-font-size;
 }
 
 body {
   min-height: 100vh;
+  line-height: 1.5;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
-  line-height: 1.5;
-  background-color: $bgc-page;
-  color: $white;
 }
 
 *, *::before, *::after {
@@ -23,8 +21,8 @@ body {
 }
 
 ul[class], ol[class] {
-  list-style: none;
   padding: 0;
+  list-style: none;
 }
 
 body, h1, h2, h3, h4, p, ul[class], ol[class],
@@ -36,9 +34,9 @@ a { text-decoration: none; }
 a:not([class]) { text-decoration-skip-ink: auto; }
 
 img {
+  display: block;
   max-width: 100%;
   height: auto;
-  display: block;
 }
 
 input, button, textarea, select { font: inherit; }
@@ -72,8 +70,8 @@ input[type="file"].visually-hidden {
   width: 1px;
   height: 1px;
   margin: -1px;
-  border: 0;
   padding: 0;
+  border: 0;
 
   white-space: nowrap;
 
@@ -87,17 +85,24 @@ h1, h2, h3, h4 { font-family: $font-head; }
 p { font-family: $font-article; }
 
 //------------------RPOJECT-------------------//
+body {
+  color: $white;
+  background-color: $bgc-page;
+}
+a, button {
+  outline-color: $color-main;
+}
 .container {
-
-  width: $mobile-container;
+  width: 100%;
+  max-width: $mobile-container;
   margin: 0 auto;
 
   @media (min-width: $tablet) {
-    width: $tablet-container;
+    max-width: $tablet-container;
   }
 
   @media (min-width: $desktope) {
-    width: $desktope-container;
+    max-width: $desktope-container;
   }
 }
 

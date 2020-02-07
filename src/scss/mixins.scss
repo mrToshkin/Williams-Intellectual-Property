@@ -6,18 +6,18 @@
 
 @mixin mobile-container {
   margin: 0 auto;
-  max-width: $mobile-content-size;
+  max-width: $mobile-container;
   width: 100%;
 }
 
 @mixin tablet-container {
   margin: 0 auto;
-  max-width: $tablet-content-size;
+  max-width: $tablet-container;
   width: 100%;
 }
 
 @mixin desktope-container {
   margin: 0 auto;
-  max-width: $desktope-content-size;
+  max-width: $desktope-container;
   width: 100%;
 }

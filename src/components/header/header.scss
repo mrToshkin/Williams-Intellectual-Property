@@ -1,4 +1,33 @@
 header { flex: 0 0 auto; }
+.header__nav {
+  &--menu-closed .nav__menu{
+    display: none;
+  }
+  &--menu-opened .nav__menu{
+    display: block;
+  }
+  &--menu-opened .nav__logo .icon-logo {
+    width: 51px;
+    height: 51px;
+  }
+  &--menu-opened .nav__logo::before{
+    content: "";
+    display: block;
+    width: 47px;
+    height: 47px;
+  }
+  &--menu-opened .nav__phonenumber-link {
+    @media (max-width: $tablet) {
+      font-size: $base-font-size; 
+    }
+  }
+  &--menu-opened .nav__phonenumber::before{
+    content: "";
+    display: block;
+    width: 160px;
+    height: 26px;
+  }
+}
 
 .header__article br {
   @media (min-width: $tablet) {
@@ -6,7 +35,7 @@ header { flex: 0 0 auto; }
   }
 }
 
-.icon-anchor {
+.button-anchor {
   position: relative;
 
   width: 22px;
@@ -16,6 +45,7 @@ header { flex: 0 0 auto; }
   border: 2px solid #FFFFFF;
   border-radius: 25px;
 
+  background: none;
   &__element {
     position: absolute;
     left: 8px;

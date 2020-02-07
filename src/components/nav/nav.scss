@@ -1,14 +1,35 @@
 .nav {
+  /* display: flex; */
+
   font-family: $font-article;
   font-weight: 600;
   font-size: 14px;
+  
+  &__logo {
+    display: block;
+    @media (max-width: $mobile) {
+      width: 47px;
+      height: 47px;
+    }
+  }
+  &__phonenumber {
+    display: block;
+    &-link {
+      color: $color-main;
+      @media (max-width: $tablet) {
+        font-size: 21px; 
+      }
+    }
+  }
 }
 
-.menu__phonenumber-link--mobile {
-  display: none;
-  @media (max-width: $tablet-1) {
-    display: block;
-    color: $color-main;
+.icon {
+  &-logo {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+  }
+  &-arrow{
+    fill: $color-main;
   }
 }
 
@@ -47,21 +68,4 @@
 .submenu__list-link {
   text-transform: uppercase;
   color: $color-main;
-}
-
-.nav__phonenumber-link{
-  color: $color-main;
-  @media (max-width: $tablet) {
-    font-size: 21px;
-  }
-}
-
-.icon {
-  &-logo {
-    -webkit-filter: invert(100%);
-    filter: invert(100%);
-  }
-  &-arrow{
-    fill: $color-main;
-  }
 }
