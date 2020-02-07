@@ -93,16 +93,21 @@ a, button {
   outline-color: $color-main;
 }
 .container {
+  /* position: relative; */
+  display: flex;
   width: 100%;
-  max-width: $mobile-container;
+  max-width: $mobile;
   margin: 0 auto;
+  padding: 0 20px;
 
   @media (min-width: $tablet) {
-    max-width: $tablet-container;
+    max-width: $tablet;
+    padding: 0 70px;
   }
 
   @media (min-width: $desktope) {
-    max-width: $desktope-container;
+    max-width: $desktope;
+    padding: 0 110px;
   }
 }
 

@@ -1,51 +1,44 @@
-header { flex: 0 0 auto; }
-.header__nav {
-  &--menu-closed .nav__menu{
-    display: none;
+.header { 
+  display: flex;
+  flex-direction: column;
+  &__nav{
+    min-height: 161px;
   }
-  &--menu-opened .nav__menu{
-    display: block;
-  }
-  &--menu-opened .nav__logo .icon-logo {
-    width: 51px;
-    height: 51px;
-  }
-  &--menu-opened .nav__logo::before{
-    content: "";
-    display: block;
-    width: 47px;
-    height: 47px;
-  }
-  &--menu-opened .nav__phonenumber-link {
-    @media (max-width: $tablet) {
-      font-size: $base-font-size; 
+  &__article {
+    h1 {
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 34px;
+    }
+    p {
+      margin-top: 20px;
+
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 23px;
     }
   }
-  &--menu-opened .nav__phonenumber::before{
-    content: "";
-    display: block;
-    width: 160px;
-    height: 26px;
-  }
 }
 
-.header__article br {
-  @media (min-width: $tablet) {
-    display: none;
-  }
-}
-
-.button-anchor {
-  position: relative;
-
+.header__anchor {
   width: 22px;
   height: 36px;
+}
+.anchor {
+  position: relative;
+
+  display: block;
+  width: inherit;
+  height: inherit;
+  margin-top: 15px;
 
   box-sizing: border-box;
   border: 2px solid #FFFFFF;
   border-radius: 25px;
 
   background: none;
+
+  transition: 0.1s;
   &__element {
     position: absolute;
     left: 8px;
@@ -55,9 +48,18 @@ header { flex: 0 0 auto; }
     width: 0;
 
     border: 1px solid #FFFFFF;
+    
+    transition: 0.1s;
   }
   &:hover {
     cursor: pointer;
     opacity: 0.5;
+    transition: 0.1s;
+  }
+}
+
+.header__article br {
+  @media (min-width: $tablet) {
+    display: none;
   }
 }
