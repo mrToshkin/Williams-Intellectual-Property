@@ -4,10 +4,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  align-content: stretch;
   flex-wrap: wrap;
 
   width: 100%;
-  padding-top: 17px;
+  margin-top: 17px;
 
   font-family: $font-article;
   font-weight: 600;
@@ -25,37 +26,56 @@
   &__logo {
     display: block;
     order: 1;
-    /* @media (max-width: $tablet-1) {
-      width: 47px;
-      height: 47px;
-    } */
   }
 
   &__phonenumber {
     display: block;
     order: 2;
 
+    @media (min-width: $desktope) {
+      order: 3;
+      flex: 0.1 1 auto;
+      width: auto;
+      margin-left: 17px;
+    }
     &-link {
+      font-size: 21px;
       font-weight: 400;
 
       color: $color-main;
       letter-spacing: 1px;
-      @media (max-width: $tablet) {
-        font-size: 21px;
-        /* transition: 0.2s; */
+
+      @media (min-width: $desktope) {
+        font-size: $base-font-size;
       }
     }
   }
 
   &__menu {
+    order: 4;
     width: 100%;
     margin-top: 27px;
-    order: 4;
+    
+    @media (min-width: $desktope) {
+      order: 2;
+      flex: 0.1 1 auto;
+      width: auto;
+      margin-top: 0;
+    }
   }
 
   &__submenu {
+    order: 4;
+    width: 100%;
     margin-top: 10px;
     padding: 0 10px;
+
+    @media (min-width: $desktope) {
+      flex: 0.3 1 auto;
+      width: auto;
+      margin-top: 0;
+      padding: 0;
+    }
   }
 }
 
@@ -79,8 +99,10 @@
   line-height: 17px;
   list-style: none;
 
-  @media (min-width: $tablet) {
-    display: flex;    
+  @media (min-width: $desktope) {
+    display: flex;
+    justify-content: space-between;
+    width: auto; 
   }
   &__item-link {
     display: block;
@@ -101,13 +123,23 @@
 }
 
 .submenu {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  display: block;
+
+  &-absolute {
+    @media (min-width: $desktope) {
+      position: absolute;
+      display: none;
+    }
+  }
+
+  &__item-link {
+    display: block;
+  }
 
   &__item- { &1, &2, &3, &4 {
     box-sizing: content-box;
 
+    width: max-content;
     margin-top: 14px;
 
     vertical-align: middle;
@@ -115,7 +147,12 @@
 
     background-color: $bgc-link;
     transition: 0.1s;
-    .submenu__item-link {
+
+    @media (min-width: $desktope) {
+      margin-top: 6px;
+    }
+
+    span {
       margin-left: 9px;
       margin-right: 24px;
 
@@ -127,7 +164,7 @@
     }
     &:hover {
       background-color: $bgc-link-hover;
-      .submenu__item-link {
+      span {
         color: $bgc-link;
         transition: 0.1s;
       }
@@ -137,7 +174,6 @@
       }
     }
   }}
-
   &__item-1 {
     width: 100%;
     margin-top: -21px;
@@ -145,46 +181,72 @@
     text-align: center;
 
     background-color: $color-main;
-    .submenu__item-link {
+    @media (min-width: $desktope) {
+      width: max-content;
+      margin-top: 0;
+
+      text-align: left;
+    }
+    span {
       color: $black;
     }
     .icon-arrow {
       fill: $black;
     }
   }
+
+  &:hover {
+    .submenu-absolute {
+      @media (min-width: $desktope) {
+        display: block;
+      }
+    }
+  }
 }
 
 //--------------menu open/close event--------------//
+/* .bg-page--menu-opened {
+  z-index: 3;
+
+  background-color: $bgc-mobile-menu;
+  transition: 0.2s;
+} */
 .header__nav--menu {
   &-opened {
     position: absolute;
     top: 0;
     left: 0;
 
+
     width: 100%;
     height: 100%; //#FIXME background не на всю высоту
 
     background-color: $bgc-mobile-menu;
-
     transition: 0.2s;
   }
 
   &-opened .nav {
     max-width: $mobile;
     margin: 0 auto;
+    margin-top: 17px;
     padding-left: 20px;
     padding-right: 20px;
   }
   &-opened .nav__burger {
     z-index: 1;
+
     order: 3;
   }
   &-opened .nav__logo .icon-logo {
     z-index: 1;
+
     display: block;
     order: 1;
     width: 51px;
     height: 51px;
+  }
+  &-opened .nav__phonenumber {
+    order: 2;
   }
   &-opened .nav__phonenumber-link {
     @media (max-width: $tablet) {
@@ -194,6 +256,9 @@
   }
   &-opened .nav__menu {
     display: block;
+  }
+  &-opened .nav__submenu {
+    order: 4;
   }
   &-opened .submenu__item- { &2, &3, &4 { 
     display: inline-block;

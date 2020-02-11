@@ -2,4 +2,10 @@
   min-height: 610px;
   background: url(../img/general/01_main-header--mobile@2x.webp) bottom center no-repeat;
   background-size: cover;
+
+  @media (min-width: $desktope) {
+    min-height: 983px;
+    background: url(../img/general/01_main-header--desktope.webp) center center no-repeat;
+    background-size: cover;
+  }
 }

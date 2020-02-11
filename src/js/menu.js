@@ -36,6 +36,7 @@ burger.addEventListener('click', function() {
 $('.burger').on('click', function(e) {
   e.preventDefault;
   $(this).toggleClass('burger--opened');
+  /* $('.header').toggleClass('bg-page--menu-opened'); */
 });
 
 $(document).ready(/* function() {
