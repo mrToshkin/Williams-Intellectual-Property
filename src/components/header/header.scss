@@ -1,6 +1,7 @@
 .header { 
   display: flex;
   flex-direction: column;
+  min-height: 530px;
 
   @media (min-width: $desktope) {
     flex-direction: row;
@@ -75,6 +76,7 @@
       font-weight: bold;
       font-size: 36px;
       line-height: 34px;
+      text-transform: capitalize;
 
       @media (min-width: $desktope) {
         font-size: 64px;

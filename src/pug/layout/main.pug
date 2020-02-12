@@ -24,8 +24,7 @@ html(lang="en")
     script(src="js/fills-min/polyfill.js" async)
     script(src="js/libs.min.js" defer)
     script(src="js/script.min.js" defer)
-    //- #FIXME не находит по вызову функцию svg4everybody()
-    //- script svg4everybody();
+    //-script $(document).ready(function(){svg4everybody(rawopts{});});
     <!--[if lt IE 9]>
     script(src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js")
     <![endif]-->
@@ -36,5 +35,6 @@ html(lang="en")
         .content
           block content
         include ../../components/footer/footer
-      block script
+        include ../../components/mobile-menu/mobile-menu
+    block script
     noscript Ваш браузер не поддерживает скрипты

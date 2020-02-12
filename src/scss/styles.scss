@@ -82,7 +82,7 @@ input[type="file"].visually-hidden {
 
 //-------------------FONTS--------------------//
 h1, h2, h3, h4 { font-family: $font-head; }
-p { font-family: $font-article; }
+p, h5, h6 { font-family: $font-article; line-height: 23px; }
 
 //------------------RPOJECT-------------------//
 body {
@@ -95,6 +95,7 @@ a, button {
 .container {
   /* position: relative; */
   display: flex;
+  flex-direction: column;
   width: 100%;
   max-width: $mobile;
   margin: 0 auto;

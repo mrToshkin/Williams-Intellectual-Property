@@ -1,0 +1,119 @@
+.slider-reviews {
+  position: relative;
+
+  @media (min-width: $desktope) {
+    padding-top: 42px;
+  }
+  &__nav {
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    width: 20px;
+
+    fill: $color-main;
+    opacity: 0.4;
+    transition: 0.2s;
+
+    @media (min-width: 400px) {
+      width: 50px;
+    }
+    @media (min-width: $desktope) {
+      width: 110px;
+    }
+
+    &:hover {
+      cursor: pointer;
+      opacity: 1;
+      transition: 0.2s;
+    }
+
+    &--prev {
+      left: -20px;  
+      @media (min-width: 400px) {
+        left: -50px;
+      }
+      @media (min-width: $desktope) {
+        left: -110px;
+      }
+    }
+    &--next {
+      right: -20px;
+      @media (min-width: 400px) {
+        right: -50px;
+      }
+      @media (min-width: $desktope) {
+        right: -110px;
+      }    
+    }
+  }
+  &__header {
+    h3 {
+      font-weight: bold;
+      font-size: 26px;
+      line-height: 35px;
+      text-transform: capitalize;
+      @media (min-width: $desktope) {
+        font-size: 32px;
+        line-height: 43px;
+      }
+    }
+  }
+  &__items {
+    display: flex;
+
+    color: $white;
+    opacity: 0.8;
+    .review-item{
+      @media (min-width: $desktope) {
+        padding: 0 10px;
+      }
+      h5 {
+        font-size: $base-font-size;
+        font-weight: normal;
+        line-height: 20px;
+        text-transform: uppercase;
+        @media (min-width: $desktope) {
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+}
+ul.slick-dots {
+  @media (min-width: $desktope) {
+    bottom: -45px;
+  }
+  li {
+    width: 25px;
+    height: 25px;
+    margin: 0 4px;
+  }
+  li button {
+    position: absolute;
+    top: 40%;
+
+    width: 25px;
+    height: 2px;
+    padding: 0;
+
+    background-color: $color-main;
+    opacity: 0.3;
+  }
+  li.slick-active button {
+    opacity: 1;
+  }
+}
+
+.icon-chevron {
+  &--left {
+    transform: translateY(-50%);
+    transform: rotate(-90deg);
+  }
+  &--right {
+    transform: translateY(-50%);
+    transform: rotate(90deg);
+  }
+}

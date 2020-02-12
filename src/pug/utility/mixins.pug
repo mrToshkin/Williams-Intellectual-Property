@@ -10,7 +10,7 @@ mixin icon(nameIcon, $width, $height, $viewBox)
    svg(class="svg-sprite-icon icon-"+nameIcon width=""+$width height=""+$height)
       use(xlink:href="img/svg/sprite.svg#"+nameIcon)
 
-mixin iconPlusLabel(nameIcon, $label, $width, $height, $viewBox)
+mixin icon-label(nameIcon, $label, $width, $height, $viewBox)
   if($viewBox)
     svg(class="svg-sprite-icon icon-"+nameIcon aria-label=""+$label width=""+$width height=""+$height viewBox=""+$viewBox)
       use(xlink:href="img/svg/sprite.svg#"+nameIcon)
@@ -18,12 +18,20 @@ mixin iconPlusLabel(nameIcon, $label, $width, $height, $viewBox)
    svg(class="svg-sprite-icon icon-"+nameIcon aria-label=""+$label width=""+$width height=""+$height)
       use(xlink:href="img/svg/sprite.svg#"+nameIcon)
 
-mixin iconPlusClass(nameIcon, classIcon, $width, $height, $viewBox)
+mixin icon-class(nameIcon, classIcon, $width, $height, $viewBox)
   if($viewBox)
     svg(class="svg-sprite-icon icon-"+nameIcon+" "+classIcon width=""+$width height=""+$height viewBox=""+$viewBox)
       use(xlink:href="img/svg/sprite.svg#"+nameIcon)
   else
    svg(class="svg-sprite-icon icon-"+nameIcon+" "+classIcon width=""+$width height=""+$height)
+      use(xlink:href="img/svg/sprite.svg#"+nameIcon)
+
+mixin icon-class-label(nameIcon, classIcon, $label, $width, $height, $viewBox)
+  if($viewBox)
+    svg(class="svg-sprite-icon icon-"+nameIcon+" "+classIcon aria-label=""+$label width=""+$width height=""+$height viewBox=""+$viewBox)
+      use(xlink:href="img/svg/sprite.svg#"+nameIcon)
+  else
+   svg(class="svg-sprite-icon icon-"+nameIcon+" "+classIcon aria-label=""+$label width=""+$width height=""+$height)
       use(xlink:href="img/svg/sprite.svg#"+nameIcon)
 
 //- mobile-first. (--desktope, --tablet, --phone)x2 retina, x2 webp = 12 pics
