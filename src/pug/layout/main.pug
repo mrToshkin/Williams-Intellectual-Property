@@ -30,10 +30,9 @@ html(lang="en")
     <![endif]-->
   body
     div(class=""+PageHeaderBackground)
-      .container
-        block header
-        block content
-        include ../../components/footer/footer
+      block header
+      block content
+      include ../../components/footer/footer
       .bg-mobile-menu
     block script
     noscript Ваш браузер не поддерживает скрипты

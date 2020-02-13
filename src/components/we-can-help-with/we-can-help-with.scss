@@ -1,4 +1,8 @@
 .we-can-help-with {
+  margin-bottom: 45px;
+  @media (min-width: $desktope) {
+    margin-bottom: 80px;
+  }
   &__header {
     margin-bottom: 25px;
     @media (min-width: $desktope) {

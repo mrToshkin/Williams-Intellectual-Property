@@ -149,5 +149,20 @@ a, button {
   }
 }
 
+.container--without-mobile {
+  /* @media (min-width: $tablet) {
+    max-width: $tablet;
+    padding: 0 70px;
+  } */
+  @media (min-width: $desktope) {
+    max-width: $desktope;
+    padding: 0 110px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
 
 @import "../components/components.scss";
