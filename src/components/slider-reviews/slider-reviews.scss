@@ -49,18 +49,6 @@
       }    
     }
   }
-  &__header {
-    h3 {
-      font-weight: bold;
-      font-size: 26px;
-      line-height: 35px;
-      text-transform: capitalize;
-      @media (min-width: $desktope) {
-        font-size: 32px;
-        line-height: 43px;
-      }
-    }
-  }
   &__items {
     display: flex;
 
@@ -70,11 +58,10 @@
       @media (min-width: $desktope) {
         padding: 0 10px;
       }
-      h5 {
+      h6 {
         font-size: $base-font-size;
         font-weight: normal;
         line-height: 20px;
-        text-transform: uppercase;
         @media (min-width: $desktope) {
           margin-bottom: 15px;
         }

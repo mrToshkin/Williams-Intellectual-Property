@@ -38,6 +38,6 @@ $(document).ready(function() {
   $('.burger').on('click', function(e) {
     e.preventDefault;
     $(this).toggleClass('burger--opened');
-    /* $('.header').toggleClass('bg-page--menu-opened'); */
+    $('.bg-mobile-menu').toggleClass('bg-mobile-menu--opened');
   });
 });

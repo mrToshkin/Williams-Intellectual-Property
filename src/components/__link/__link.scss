@@ -1,9 +1,13 @@
-.link{
-  background-color: $bgc-link;
-    &--active{
-      background-color: $bgc-main;
-    }
-    &:hover{
-      background-color: $bgc-link-hover;
-    }
+.link {
+  width: 100%;
+  line-height: 50px;
+
+  opacity: 0.4;
+  background-color: $bgc-element-button;
+
+  &:hover{
+    color: $black;
+    background-color: $color-main;
+    opacity: 1;
+  }
 }

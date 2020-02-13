@@ -81,8 +81,45 @@ input[type="file"].visually-hidden {
 }
 
 //-------------------FONTS--------------------//
-h1, h2, h3, h4 { font-family: $font-head; }
-p, h5, h6 { font-family: $font-article; line-height: 23px; }
+h1, h2, h3, h4 { 
+  font-family: $font-head; 
+  text-transform: capitalize;
+}
+h3 {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 35px;
+  @media (min-width: $desktope) {
+    font-size: 32px;
+    line-height: 43px;
+  }
+}
+p, h5, h6 { 
+  font-family: $font-article;
+  font-size: $base-font-size;
+  color: $white;
+  opacity: 0.8;
+}
+p {
+  line-height: 23px;
+}
+h5, h6 {
+  line-height: 20px;
+  text-transform: uppercase;
+}
+h5 {
+  letter-spacing: 1px;
+}
+
+.link {
+  font-family: $font-article;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: $white;
+}
 
 //------------------RPOJECT-------------------//
 body {
