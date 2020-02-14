@@ -81,27 +81,18 @@
         height: 37.3%;
       }
     }
-    .link {
+    .link-desktope {
       display: none;
       @media (min-width: $desktope) {
         display: block;
         height: 14.7%;
       }
     }
-    &:hover {
-      .we-can-help-with__icons,
-      .we-can-help-with__icon-bad,
-      h5, p {
-        opacity: 1;
-      }
-      h5 {
-        color: $color-main;
-      }
-      .link {
-        color: $black;
-        background-color: $color-main;
-        opacity: 1;
-      }
+  }
+  .block-link:hover {
+    .we-can-help-with__icons,
+    .we-can-help-with__icon-bad {
+      opacity: 1;
     }
   }
   &__icons {

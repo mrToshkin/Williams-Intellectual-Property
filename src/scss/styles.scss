@@ -89,6 +89,7 @@ h3 {
   font-weight: bold;
   font-size: 26px;
   line-height: 35px;
+  color: $white;
   @media (min-width: $desktope) {
     font-size: 32px;
     line-height: 43px;
@@ -111,14 +112,15 @@ h5 {
   letter-spacing: 1px;
 }
 
-.link {
+.link-desktope,
+.link-mobile {
   font-family: $font-article;
   font-weight: 600;
   font-size: 14px;
   text-align: center;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: $white;
+  color: $white-op8;
 }
 
 //------------------RPOJECT-------------------//
@@ -164,5 +166,67 @@ a, button {
   }
 }
 
+.button{
+  background-color: $color-main;
+    &:hover{
+      background-color: $bgc-link-hover;
+    } 
+}
+
+.link-desktope {
+  position: relative;
+
+  display: none;
+  width: 100%;
+  line-height: 41px;
+
+  /* opacity: 0.4; */
+  background-color: $bgc-element-button;
+
+  @media (min-width: $desktope) {
+    display: block;
+
+    line-height: 50px;
+  }
+
+  &:hover{
+    color: $black;
+    background-color: $color-main;
+    opacity: 1;
+  }
+}
+
+.link-mobile {
+  position: relative;
+
+  display: block;
+  width: 100%;
+  line-height: 41px;
+
+  color: $black;
+  background-color: $color-main;
+  opacity: 1;
+
+  @media (min-width: $desktope) {
+    display: none;
+
+    line-height: 50px;
+  }
+}
+
+.block-link:hover {
+  cursor: pointer;
+  h5, p {
+    opacity: 1;
+  }
+  h5 {
+    color: $color-main;
+  }
+  .link-desktope {
+    color: $black;
+    background-color: $color-main;
+    opacity: 1;
+  }
+}
 
 @import "../components/components.scss";

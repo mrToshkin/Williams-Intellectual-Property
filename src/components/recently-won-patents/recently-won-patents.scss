@@ -1,13 +1,13 @@
 .recently-won-patents {
   min-height: 287px;
+  padding-top: 48px;
+  padding-bottom: 50px;
+
   @media (min-width: $desktope) {
+    min-height: 366px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     margin-left: calc(50% + 10px);
-  }
-  h3 {
-    margin-top: 48px;
-    @media (min-width: $desktope) {
-      margin-top: 99px;
-    }
   }
   p {
     margin-top: 20px;
