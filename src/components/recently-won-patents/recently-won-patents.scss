@@ -1,0 +1,24 @@
+.recently-won-patents {
+  min-height: 287px;
+  @media (min-width: $desktope) {
+    margin-left: calc(50% + 10px);
+  }
+  h3 {
+    margin-top: 48px;
+    @media (min-width: $desktope) {
+      margin-top: 99px;
+    }
+  }
+  p {
+    margin-top: 20px;
+    @media (min-width: $desktope) {
+      padding-right: 34%;
+    }
+  }
+  .submenu__item-5 {
+    margin-top: 20px;
+    @media (min-width: $desktope) {
+      margin-top: 30px;
+    }
+  }
+}

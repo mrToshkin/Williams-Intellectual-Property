@@ -125,6 +125,10 @@
 .submenu {
   display: block;
 
+  font-family: $font-article;
+  font-weight: 600;
+  font-size: 14px;
+
   &-absolute {
     @media (min-width: $desktope) {
       position: absolute;
@@ -136,7 +140,7 @@
     display: block;
   }
 
-  &__item- { &1, &2, &3, &4 {
+  &__item- { &1, &2, &3, &4, &5 {
     box-sizing: content-box;
 
     width: max-content;
@@ -192,6 +196,14 @@
     }
     .icon-arrow {
       fill: $black;
+    }
+  }
+  &__item-5 { // section recently-won-patents
+    background-color: $color-main;
+    .icon-arrow { fill: $bgc-link; }
+    span { 
+      color: $bgc-link;
+      letter-spacing: 1px;
     }
   }
 
