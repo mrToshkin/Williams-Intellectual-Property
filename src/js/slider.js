@@ -24,4 +24,24 @@ $(document).ready(function() {
       }
     ]
   });
+
+  $('.slider-latest-news__items').slick({
+    prevArrow: '.slider-latest-news__nav--prev',
+    nextArrow: '.slider-latest-news__nav--next',
+    dots: true,
+    mobileFirst: true,
+    responsive: [
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 1399,
+        settings: "unslick"
+      }
+    ]
+  });
 });

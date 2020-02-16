@@ -1,0 +1,56 @@
+.link-desktope {
+  position: relative;
+
+  display: none;
+  width: 100%;
+  line-height: 41px;
+
+  /* opacity: 0.4; */
+  background-color: $bgc-element-button;
+
+  @media (min-width: $desktope) {
+    display: block;
+
+    line-height: 50px;
+  }
+
+  &:hover{
+    color: $black;
+    background-color: $color-main;
+    opacity: 1;
+  }
+}
+
+.link-mobile {
+  position: relative;
+
+  display: block;
+  width: 100%;
+  line-height: 41px;
+
+  color: $black;
+  background-color: $color-main;
+  opacity: 1;
+
+  @media (min-width: $desktope) {
+    display: none;
+
+    line-height: 50px;
+  }
+}
+
+.block-link:hover {
+  cursor: pointer;
+  h6, p {
+    color: $white;
+    opacity: 1;
+  }
+  h5 {
+    color: $color-main;
+  }
+  .link-desktope {
+    color: $black;
+    background-color: $color-main;
+    opacity: 1;
+  }
+}

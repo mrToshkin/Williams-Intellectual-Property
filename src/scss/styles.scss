@@ -98,8 +98,7 @@ h3 {
 p, h5, h6 { 
   font-family: $font-article;
   font-size: $base-font-size;
-  color: $white;
-  opacity: 0.8;
+  color: $white-op8;
 }
 p {
   line-height: 23px;
@@ -112,6 +111,22 @@ h5 {
   letter-spacing: 1px;
 }
 
+time {
+  font-family: $font-article;
+  font-size: 14px;
+  line-height: 20px;
+  color: $white-op5;
+}
+
+span.submenu__item-props {
+  font-family: $font-article;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
 .link-desktope,
 .link-mobile {
   font-family: $font-article;
@@ -120,7 +135,7 @@ h5 {
   text-align: center;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: $white-op8;
+  color: $white-op4;
 }
 
 //------------------RPOJECT-------------------//
@@ -171,62 +186,6 @@ a, button {
     &:hover{
       background-color: $bgc-link-hover;
     } 
-}
-
-.link-desktope {
-  position: relative;
-
-  display: none;
-  width: 100%;
-  line-height: 41px;
-
-  /* opacity: 0.4; */
-  background-color: $bgc-element-button;
-
-  @media (min-width: $desktope) {
-    display: block;
-
-    line-height: 50px;
-  }
-
-  &:hover{
-    color: $black;
-    background-color: $color-main;
-    opacity: 1;
-  }
-}
-
-.link-mobile {
-  position: relative;
-
-  display: block;
-  width: 100%;
-  line-height: 41px;
-
-  color: $black;
-  background-color: $color-main;
-  opacity: 1;
-
-  @media (min-width: $desktope) {
-    display: none;
-
-    line-height: 50px;
-  }
-}
-
-.block-link:hover {
-  cursor: pointer;
-  h5, p {
-    opacity: 1;
-  }
-  h5 {
-    color: $color-main;
-  }
-  .link-desktope {
-    color: $black;
-    background-color: $color-main;
-    opacity: 1;
-  }
 }
 
 @import "../components/components.scss";

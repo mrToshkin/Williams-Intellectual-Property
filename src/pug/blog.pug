@@ -1,8 +1,8 @@
 extends layout/main
 
 block variables
-  - var title = "Williams Intellectual Property"
-  - var PageHeaderBackground = "main-page__header-background" //- class
+  - var title = "Blog - Williams Intellectual Property"
+  - var PageHeaderBackground = "blog-page__header-background" //- class
 
 block header
   .container
@@ -21,13 +21,6 @@ block header
 
 block content
   .container
-    include ../components/slider-reviews/slider-reviews
-    include ../components/we-can-help-with/we-can-help-with
-  include ../components/thank-you/thank-you
-  .container
-    include ../components/recently-won-patents/recently-won-patents
   include ../components/call-us-today/call-us-today
-  .container
-    include ../components/slider-latest-news/slider-latest-news
 
 block script
