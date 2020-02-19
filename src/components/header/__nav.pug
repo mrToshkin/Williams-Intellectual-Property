@@ -1,15 +1,17 @@
 nav.header__nav
-  .nav
-    button.nav__burger.burger.burger--nojs(type="button")
-      span.burger__elements
-      span.visually-hidden Open menu
-    .nav__logo
-      a(href="index.html").nav__logo-link
-        picture
-          source(media="(min-width: 768px)" srcset="img/svg/logo.svg")
-          img(class="icon-logo" src="img/svg/logo-mobile.svg" alt="logo Williams Intellectual Property")
-    .nav__phonenumber
-      a(href="tel:18883571068").nav__phonenumber-link 1-888-357-1068
-    include ../nav/__menu
-    include ../nav/__submenu
+  .header__nav-catcher.header__nav--sticky
+    .container
+      .nav
+        button.nav__burger.burger.burger--nojs(type="button")
+          span.burger__elements
+          span.visually-hidden Open menu
+        .nav__logo
+          a(href="index.html").nav__logo-link
+            picture
+              source(class="icon-logo-changer" media="(min-width: 768px)" srcset="img/svg/logo.svg")
+              img(class="icon-logo" src="img/svg/logo-mobile.svg" alt="logo Williams Intellectual Property")
+        .nav__phonenumber
+          a(href="tel:18883571068").nav__phonenumber-link 1-888-357-1068
+        include ../nav/__menu
+        include ../nav/__submenu
 .header__nav-menu-spacer

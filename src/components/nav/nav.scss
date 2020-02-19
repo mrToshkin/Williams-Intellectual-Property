@@ -26,6 +26,12 @@
   &__logo {
     display: block;
     order: 1;
+    @media (min-width: $desktope) {
+      width: 80px;
+      .icon-logo {
+        margin: 0 auto;
+      }
+    }
   }
 
   &__phonenumber {
@@ -308,4 +314,24 @@
     min-height: 161px; //same as header__nav {min-height} mobile
   }
 }
-//-----------------------end-----------------------//
+//----------------------end------------------------//
+
+//----------------nav--sticky event----------------//
+.header__nav--sticky {
+  @media (min-width: $desktope) {
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    overflow: hidden;
+    
+    min-height: 60px;
+    width: 100%;
+    
+    background-color: $bgc-nav-sticky;
+    transition: 0.3s;
+
+    .submenu-absolute {
+      position: fixed;
+    }
+  }
+}

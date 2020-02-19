@@ -5,17 +5,19 @@ block variables
   - var PageHeaderBackground = "main-page__header-background" //- class
 
 block header
-  .container
-    .header
-      include ../components/header/__nav
+  .header
+    include ../components/header/__nav
+    .container
       .header__article.header__article--main-page
         article
           h1 We win patents
           p "The Congress shall have the power... to promote the progress of science and useful arts, by securing for limited times to authors and inventors the exclusive right to their respective writings and discoveries.” <br>US Constitution § 8, Clause 8
+    .container
       .header__social-icons.social-icons
         include ../components/__social-icons/header__social-icons
+    .container
       .header__anchor
-        a(href="http://").anchor
+        a(href="#anchor").anchor
           .anchor__element
           span.visually-hidden Move below
 
