@@ -16,7 +16,9 @@
       margin-top: 43px;
     }
   }
-
+  .menu__item--infooter {
+    display: none;
+  }
   &__article {
     @media (min-width: $desktope) {
       flex: 0 1 50%;
@@ -37,9 +39,7 @@
   }
 
   &__social-icons {
-    @media (max-width: $tablet-1) {
-      display: none;
-    }
+    display: none;
     @media (min-width: $desktope) {
       flex: 0 1 50%;
 

@@ -9,9 +9,11 @@
 .slider-latest-news {
   position: relative;
   padding-top: 60px;
+  padding-bottom: 35px;
 
   @media (min-width: $desktope) {
     padding-top: 109px;
+    padding-bottom: 68px;
     br {
       display: none;
     }
@@ -91,6 +93,7 @@
         margin-bottom: 5px;
         @media (min-width: $desktope) {
           margin-top: 35px;
+          margin-bottom: 10px;
         }
       }
       h6 {
@@ -118,6 +121,7 @@
       padding: 6px 14px 6px 17px;
       color: $black;
       background-color: $white-op3;
+      transition: 0.15s;
 
       @media (min-width: $desktope) {
         display: none;
@@ -129,16 +133,23 @@
       align-items: baseline;
       width: 100%;
       min-height: 460px;
+      .img-bg-wrapper { background-color: $color-main; }
+      img {
+        opacity: 1;
+        transition: 0.15s;
+      }
       &:hover {
         img {
           opacity: 0.4;
+          transition: 0.15s;
         }
         p, h6 {
           color: $white;
+          transition: 0.15s;
         }
-        .img-bg-wrapper,
         span.submenu__item-props {
           background-color: $color-main;
+          transition: 0.15s;
         }
       }
     }
@@ -175,8 +186,10 @@ ul.slick-dots {
 
     background-color: $color-main;
     opacity: 0.3;
+    transition: 0.15s;
   }
   li.slick-active button {
     opacity: 1;
+    transition: 0.15s;
   }
 }

@@ -94,11 +94,13 @@
     .we-can-help-with__icons,
     .we-can-help-with__icon-bad {
       opacity: 1;
+      transition: 0.15s;
     }
   }
   &__icons {
     fill: $color-main;
     opacity: 0.5;
+    transition: 0.15s;
 
     @media (min-width: $desktope) {
       margin: 5% 0;
@@ -109,6 +111,7 @@
     fill: none;
     stroke: $color-main;
     opacity: 0.5;
+    transition: 0.15s;
 
     @media (min-width: $desktope) {
       margin: 5% 0;

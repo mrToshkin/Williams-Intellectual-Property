@@ -1,6 +1,5 @@
 @import "libs";
 @import "vars";
-@import "mixins";
 @import "fonts";
 
 //------------------GENERAL-------------------//
@@ -99,6 +98,7 @@ p, h5, h6 {
   font-family: $font-article;
   font-size: $base-font-size;
   color: $white-op8;
+  transition: 0.15s;
 }
 p {
   line-height: 23px;
@@ -138,10 +138,33 @@ span.submenu__item-props {
   color: $white-op4;
 }
 
+.accreditation__label p {
+  font-family: $font-article;
+  font-size: 9px;
+  line-height: 13px;
+  color: $white-op8;
+  transition: 0.15s;
+}
+.label__header { font-weight: 600; }
+.label__body { font-weight: 400; }
+
 //------------------RPOJECT-------------------//
 body {
   color: $white;
   background-color: $bgc-page;
+
+  @media (min-width: $desktope) {
+    background: $bgc-page url(../img/general/middlepage-bg--desktope.jpg) center -520% no-repeat;
+    background: $bgc-page url(../img/general/middlepage-bg--desktope.webp) center -520% no-repeat;
+    background-size: cover;
+  }
+  @media 
+  (min-width: $desktope) and (min-resolution: $retina-dpi), 
+  (min-width: $desktope) and (min-resolution: $retina-dppx) {
+    background: $bgc-page url(../img/general/middlepage-bg--desktope@2x.jpg) center -520% no-repeat;
+    background: $bgc-page url(../img/general/middlepage-bg--desktope@2x.webp) center -520% no-repeat;
+    background-size: cover;
+  }
 }
 a, button {
   outline-color: $color-main;

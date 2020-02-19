@@ -187,5 +187,5 @@ gulp.task('watch', () => {
 
 gulp.task('optimg', gulp.series('clean:img', 'img', 'webp', 'svg', 'sprite', 'sprite:social'));
 gulp.task('dev', gulp.series('clean:dev', gulp.parallel('scss', 'js', 'js:libs', 'js:fills', 'pug')));
-gulp.task('build', gulp.series(gulp.parallel('clean:img', 'clean:fonts', 'clean:dev'), gulp.parallel('optimg', 'fonts', 'scss', 'js', 'js:libs', 'js:fills', 'pug:min')));
+gulp.task('build', gulp.series(gulp.parallel('clean:img', 'clean:fonts', 'clean:dev'), gulp.parallel('optimg', 'fonts', 'scss', 'js', 'js:libs', 'js:fills', 'pug:min'), 'watch'));
 gulp.task('default', gulp.series('dev', 'watch'));
