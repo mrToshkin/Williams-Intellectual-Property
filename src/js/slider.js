@@ -44,4 +44,12 @@ $(document).ready(function() {
       }
     ]
   });
+
+  $('.slider__items').slick({
+    prevArrow: '.slider__nav--prev',
+    nextArrow: '.slider__nav--next',
+    dots: true,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  });
 });

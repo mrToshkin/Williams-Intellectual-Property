@@ -1,21 +1,64 @@
 .main-page__header-background {
-  height: 610px;
-  background: url(../img/general/01_main-header--mobile@2x.jpg) top center no-repeat;
-  background: url(../img/general/01_main-header--mobile@2x.webp) top center no-repeat;
-  background-size: cover;
+  position: relative;
+  z-index: 1;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 610px;  
+    opacity: 1;
+    z-index: -1;
+    background: url(../img/general/01_main-header--mobile@2x.jpg) top center no-repeat;
+    background: url(../img/general/01_main-header--mobile@2x.webp) top center no-repeat;
+    background-size: cover;
 
-  @media (min-width: $desktope) {
-    height: 983px;
-    background: url(../img/general/01_main-header--desktope.jpg) center center no-repeat;
-    background: url(../img/general/01_main-header--desktope.webp) center center no-repeat;
-    background-size: cover;
+    @media (min-width: $desktope) {
+      height: 983px;
+      background: url(../img/general/01_main-header--desktope.jpg) center center no-repeat;
+      background: url(../img/general/01_main-header--desktope.webp) center center no-repeat;
+      background-size: cover;
+    }
+    @media 
+    (min-width: $desktope) and (min-resolution: $retina-dpi), 
+    (min-width: $desktope) and (min-resolution: $retina-dppx) {
+      height: 983px;
+      background: url(../img/general/01_main-header--desktope@2x.jpg) center center no-repeat;
+      background: url(../img/general/01_main-header--desktope@2x.webp) center center no-repeat;
+      background-size: cover;
+    }
   }
-  @media 
-  (min-width: $desktope) and (min-resolution: $retina-dpi), 
-  (min-width: $desktope) and (min-resolution: $retina-dppx) {
-    height: 983px;
-    background: url(../img/general/01_main-header--desktope@2x.jpg) center center no-repeat;
-    background: url(../img/general/01_main-header--desktope@2x.webp) center center no-repeat;
+}
+.who-we-are__header-background {
+  position: relative;
+  z-index: 1;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 470px;  
+    opacity: 0.5;
+    z-index: -1;
+    background: url(../img/general/02_who-we-are--mobile@2x.jpg) bottom center no-repeat;
+    background: url(../img/general/02_who-we-are--mobile@2x.webp) bottom center no-repeat;
     background-size: cover;
+
+    @media (min-width: $desktope) {
+      height: 630px;
+      background: url(../img/general/02_who-we-are--desktope.jpg) bottom center no-repeat;
+      background: url(../img/general/02_who-we-are--desktope.webp) bottom center no-repeat;
+      background-size: cover;
+    }
+    @media 
+    (min-width: $desktope) and (min-resolution: $retina-dpi), 
+    (min-width: $desktope) and (min-resolution: $retina-dppx) {
+      height: 630px;
+      background: url(../img/general/02_who-we-are--desktope@2x.jpg) bottom center no-repeat;
+      background: url(../img/general/02_who-we-are--desktope@2x.webp) bottom center no-repeat;
+      background-size: cover;
+    }
   }
 }

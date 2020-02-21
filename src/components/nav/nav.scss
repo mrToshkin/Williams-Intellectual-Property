@@ -230,7 +230,7 @@
   z-index: 1;
 
   width: 100%;
-  height: 100%; //#FIXME background не на всю высоту
+  height: 100%;
 
   background-color: $bgc-mobile-menu;
   transition: 0.2s;
@@ -245,7 +245,7 @@
     height: 100%;
 
   .nav {
-    z-index: 2;
+    z-index: 3;
     max-width: $mobile;
     margin: 0 auto;
     margin-top: 17px;
@@ -253,12 +253,12 @@
     padding-right: 20px;
   }
   .nav__burger {
-    z-index: 2;
+    z-index: 3;
 
     order: 3;
   }
   .nav__logo .icon-logo {
-    z-index: 2;
+    z-index: 3;
 
     display: block;
     order: 1;
@@ -267,7 +267,7 @@
   }
   .nav__phonenumber {
     order: 2;
-    z-index: 2;
+    z-index: 3;
   }
   .nav__phonenumber-link {
     @media (max-width: $tablet) {
@@ -277,11 +277,11 @@
   }
   .nav__menu {
     display: block;
-    z-index: 2;
+    z-index: 3;
   }
   .nav__submenu {
     order: 4;
-    z-index: 2;
+    z-index: 3;
   }
   .submenu__item- { &2, &3, &4 { 
     display: inline-block;
@@ -311,7 +311,14 @@
     order: 0;
     display: block;
     width: 100%;
-    min-height: 161px; //same as header__nav {min-height} mobile
+    min-height: 131px; //same as header__nav {min-height} mobile
+  }
+}
+.header--main-page {
+  .header__nav--menu-opened {
+    ~ .header__nav-menu-spacer {
+      min-height: 161px; //same as header__nav {min-height} mobile
+    }
   }
 }
 //----------------------end------------------------//

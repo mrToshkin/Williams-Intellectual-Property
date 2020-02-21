@@ -2,24 +2,46 @@ extends layout/main
 
 block variables
   - var title = 'Who We Are - Williams Intellectual Property'
+  - var PageHeaderBackground = "who-we-are__header-background" //- class
+  
+  //-var in ../slider/slider-in-article
+  - var file1 = "who-we-are_1"
+  - var file2 = "who-we-are_1"
+  - var file3 = "who-we-are_1"
+  - var file4 = "who-we-are_1"
+
+  //-var in ../we-can-help-with/we-can-help-with
+  - var weCanHelpWithHeaderTitle = "What we do"
 
 block header
-  .header.main-page__header
-    .header__nav.nav
-      include ../components/nav/__menu
-    .header__breadcrumbs
-      ul
-        li
-          a(href="")
-        li
-          a(href="")
-        li
-          a(href="")
-    .header__article
-      h1 
-      p 
-    .header__contact-us.link
-
+  .header
+    include ../components/header/__nav
+    .container
+      .header__article
+        .breadcrumbs
+          ul.breadcrumbs__body
+            li.breadcrumbs__item
+              a(href="http://localhost:3000/index.html").breadcrumbs__link Home
+            li.breadcrumbs__item Who we are
+        article
+          h1 Who we are
+          p Over the last five years, practitioners at Williams Intellectual Property have written more than 500 utility patent applications for clients across the world.
+        .submenu.submenu__item-2.article__submenu
+          a(href="http://").submenu__item-link
+            +icon("arrow", "14", "9")
+            span Contact us
+      .header__line
+        .header__social-icons
+        .header__anchor
+          a(href="#who-we-are").anchor
+            .anchor__element
+            span.visually-hidden Move below
 
 block content
+  include ../components/who-we-are/who-we-are
+  include ../components/we-can-help-with/we-can-help-with
+  include ../components/call-us-today/call-us-today
+  include ../components/sliders/slider-reviews
+  include ../components/sliders/slider-latest-news
+
 block script

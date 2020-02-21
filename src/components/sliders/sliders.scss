@@ -1,9 +1,10 @@
 .slider-reviews {
   position: relative;
+  padding-top: 0;
   padding-top: 60px;
 
   @media (min-width: $desktope) {
-    padding-top: 42px;
+    padding-top: 90px;
   }
 }
 .slider-latest-news {
@@ -135,6 +136,7 @@
       min-height: 460px;
       .img-bg-wrapper { background-color: $color-main; }
       img {
+        object-fit: contain;
         opacity: 1;
         transition: 0.15s;
       }

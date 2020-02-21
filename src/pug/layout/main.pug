@@ -1,6 +1,9 @@
 include ../utility/mixins
 block variables
 
+- var desktope  = 1400
+- var tablet = 768
+
 doctype html
 html(lang="en")
   head
@@ -33,6 +36,6 @@ html(lang="en")
       block header
       block content
       include ../../components/footer/footer
-    .bg-mobile-menu
+      .bg-mobile-menu
     block script
-    noscript Ваш браузер не поддерживает скрипты
+    noscript Ваш браузер не поддерживает JavaScript

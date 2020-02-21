@@ -1,6 +1,7 @@
 @import "__social-icons/__social-icons";
 @import "links";
-@import "sliders";
+@import "sliders/sliders";
+@import "sliders/slider-img-in-article";
 @import "header/header";
 @import "header/pages__header-background";
 @import "nav/nav";
@@ -9,5 +10,6 @@
 @import "thank-you/thank-you";
 @import "recently-won-patents/recently-won-patents";
 @import "call-us-today/call-us-today";
+@import "who-we-are/who-we-are.scss";
 
 @import "footer/footer";

@@ -84,7 +84,7 @@ h1, h2, h3, h4 {
   font-family: $font-head; 
   text-transform: capitalize;
 }
-h3 {
+h2, h3 {
   font-weight: bold;
   font-size: 26px;
   line-height: 35px;
@@ -201,6 +201,20 @@ a, button {
     flex-direction: column;
     width: 100%;
     margin: 0 auto;
+  }
+}
+
+.container--article {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: $mobile;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (min-width: $desktope) {
+    max-width: $desktope;
+    padding: 0 310px;
   }
 }
 
