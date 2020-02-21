@@ -10,6 +10,16 @@
     @media (min-width: $desktope) {
       margin-bottom: 35px;
     }
+    p {
+      margin-top: 15px;
+      
+      font-size: 16px;
+      line-height: 24px;
+      @media (min-width: $desktope) {
+        margin-top: 20px;
+        padding-right: 50%;
+      }
+    }
   }
   &__body {
     display: flex;

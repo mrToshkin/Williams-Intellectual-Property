@@ -1,0 +1,41 @@
+extends layout/main
+
+block variables
+  - var title = 'What We Do - Williams Intellectual Property'
+  - var PageHeaderBackground = "what-we-do__header-background" //- class
+
+  //-var in ../we-can-help-with/we-can-help-with
+  - var weCanHelpWithHeaderTitle = "Which Patent is Right for You?"
+  - var weCanHelpWithHeaderArticle = "Over the last five years, practitioners at Williams Intellectual Property have written more than 500 utility patent applications for clients across the world. A brief Overview of Patent Types…"
+
+block header
+  .header
+    include ../components/header/__nav
+    .container
+      .header__article
+        .breadcrumbs
+          ul.breadcrumbs__body
+            li.breadcrumbs__item
+              a(href="http://localhost:3000/index.html").breadcrumbs__link Home
+            li.breadcrumbs__item What we do
+        article
+          h1 What we do
+          p Over the last five years, practitioners at Williams Intellectual Property have written more than 500 utility patent applications for clients across the world.
+        .submenu.submenu__item-2.article__submenu
+          a(href="http://").submenu__item-link
+            +icon("arrow", "14", "9")
+            span Contact us
+      .header__line
+        .header__social-icons
+        .header__anchor
+          a(href="#we-can-help-with").anchor
+            .anchor__element
+            span.visually-hidden Move below
+
+block content
+  include ../components/we-can-help-with/we-can-help-with
+  include ../components/call-us-today/call-us-today
+  include ../components/sliders/slider-reviews
+  include ../components/sliders/slider-latest-news
+
+block script

@@ -45,7 +45,13 @@
     background: url(../img/general/02_who-we-are--mobile@2x.jpg) bottom center no-repeat;
     background: url(../img/general/02_who-we-are--mobile@2x.webp) bottom center no-repeat;
     background-size: cover;
-
+    @media 
+    (min-resolution: $retina-dpi), 
+    (min-resolution: $retina-dppx) {
+      background: url(../img/general/02_who-we-are--mobile@2x.jpg) bottom center no-repeat;
+      background: url(../img/general/02_who-we-are--mobile@2x.webp) bottom center no-repeat;
+      background-size: cover;
+    }
     @media (min-width: $desktope) {
       height: 630px;
       background: url(../img/general/02_who-we-are--desktope.jpg) bottom center no-repeat;
@@ -58,6 +64,45 @@
       height: 630px;
       background: url(../img/general/02_who-we-are--desktope@2x.jpg) bottom center no-repeat;
       background: url(../img/general/02_who-we-are--desktope@2x.webp) bottom center no-repeat;
+      background-size: cover;
+    }
+  }
+}
+
+.what-we-do__header-background {
+  position: relative;
+  z-index: 1;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 470px;  
+    opacity: 0.5;
+    z-index: -1;
+    background: url(../img/general/03_what-we-do--mobile.jpg) bottom center no-repeat;
+    background: url(../img/general/03_what-we-do--mobile.webp) bottom center no-repeat;
+    background-size: cover;
+    @media 
+    (min-resolution: $retina-dpi), 
+    (min-resolution: $retina-dppx) {
+      background: url(../img/general/03_what-we-do--mobile@2x.jpg) bottom center no-repeat;
+      background: url(../img/general/03_what-we-do--mobile@2x.webp) bottom center no-repeat;
+      background-size: cover;
+    }
+    @media (min-width: $desktope) {
+      height: 630px;
+      background: url(../img/general/03_what-we-do--desktope.jpg) bottom center no-repeat;
+      background: url(../img/general/03_what-we-do--desktope.webp) bottom center no-repeat;
+      background-size: cover;
+    }
+    @media 
+    (min-width: $desktope) and (min-resolution: $retina-dpi), 
+    (min-width: $desktope) and (min-resolution: $retina-dppx) {
+      height: 630px;
+      background: url(../img/general/03_what-we-do--desktope@2x.jpg) bottom center no-repeat;
+      background: url(../img/general/03_what-we-do--desktope@2x.webp) bottom center no-repeat;
       background-size: cover;
     }
   }
