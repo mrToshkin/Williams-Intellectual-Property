@@ -1,6 +1,6 @@
 @import "libs";
 @import "vars";
-@import "fonts";
+@import "font-face";
 
 //------------------GENERAL-------------------//
 html {
@@ -79,75 +79,6 @@ input[type="file"].visually-hidden {
   overflow: hidden;
 }
 
-//-------------------FONTS--------------------//
-h1, h2, h3, h4 { 
-  font-family: $font-head; 
-  text-transform: capitalize;
-}
-h2, h3 {
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 35px;
-  color: $white;
-  @media (min-width: $desktope) {
-    font-size: 32px;
-    line-height: 43px;
-  }
-}
-p, h5, h6 { 
-  font-family: $font-article;
-  font-size: $base-font-size;
-  color: $white-op8;
-  transition: 0.15s;
-}
-p {
-  line-height: 23px;
-}
-h5, h6 {
-  line-height: 20px;
-  text-transform: uppercase;
-}
-h5 {
-  letter-spacing: 1px;
-}
-
-time {
-  font-family: $font-article;
-  font-size: 14px;
-  line-height: 20px;
-  color: $white-op5;
-}
-
-span.submenu__item-props {
-  font-family: $font-article;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 17px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
-.link-desktope,
-.link-mobile {
-  font-family: $font-article;
-  font-weight: 600;
-  font-size: 14px;
-  text-align: center;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: $white-op4;
-}
-
-.accreditation__label p {
-  font-family: $font-article;
-  font-size: 9px;
-  line-height: 13px;
-  color: $white-op8;
-  transition: 0.15s;
-}
-.label__header { font-weight: 600; }
-.label__body { font-weight: 400; }
-
 //------------------RPOJECT-------------------//
 body {
   color: $white;
@@ -225,4 +156,5 @@ a, button {
     } 
 }
 
+@import "fonts-articles";
 @import "../components/components.scss";
