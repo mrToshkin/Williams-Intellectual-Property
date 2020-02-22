@@ -1,9 +1,7 @@
 .we-can-help-with {
   margin-top: 60px;
-  margin-bottom: 45px;
   @media (min-width: $desktope) {
     margin-top: 85px;
-    margin-bottom: 80px;
   }
   &__header {
     margin-bottom: 25px;
@@ -128,5 +126,161 @@
       margin: 5% 0;
       /* height: 35%; */
     } 
+  }
+}
+
+.we-can-help-with--short {
+  @media (min-width: $desktope) {
+    margin-top: 95px;
+  }
+  .we-can-help-with__body {
+    flex-direction: column;
+    @media (min-width: $desktope) {
+      flex-direction: row;
+    }
+  }
+  .we-can-help-with__item {
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 288px;
+    &:nth-child(2n) {
+      margin-left: 0;
+      @media (min-width: $desktope) {
+        margin-left: 20px;
+      }
+    }
+    h5 {
+      position: relative;
+      transform: translateY(0);
+      min-height: 42px;
+      margin-top: 50px;
+      @media (min-width: $desktope) {
+        margin-top: 30px;
+      }
+    }
+    p {
+      display: block;
+      height: 100%;
+    }
+    .link-desktope {
+      align-self: flex-end;
+      height: auto;
+    }
+  }
+}
+
+//-----------chosen event-----------//
+.without-item-1 { // utility-patents
+  .we-can-help-with__item-1 {
+    display: none;
+  }
+  .we-can-help-with__item {
+    &:nth-child(2) { margin-left: 0; }
+    &:nth-child(3) { margin-left: 20px; }
+    &:nth-child(4) { margin-left: 0; }
+    &:nth-child(5) { margin-left: 20px; }
+    &:nth-child(6) { margin-left: 0; }
+    @media (min-width: $desktope) {
+      &:nth-child(2) { margin-left: 0; }
+      &:nth-child(3) { margin-left: 20px; }
+      &:nth-child(4) { margin-left: 20px; }
+      &:nth-child(5) { margin-left: 0; }
+      &:nth-child(6) { margin-left: 20px; }
+    }
+  }
+}
+.without-item-2 { // design-patents
+  .we-can-help-with__item-2 {
+    display: none;
+  }
+  .we-can-help-with__item {
+    &:nth-child(1) { margin-left: 0; }
+    &:nth-child(3) { margin-left: 20px; }
+    &:nth-child(4) { margin-left: 0; }
+    &:nth-child(5) { margin-left: 20px; }
+    &:nth-child(6) { margin-left: 0; }
+    @media (min-width: $desktope) {
+      &:nth-child(1) { margin-left: 0; }
+      &:nth-child(3) { margin-left: 20px; }
+      &:nth-child(4) { margin-left: 20px; }
+      &:nth-child(5) { margin-left: 0; }
+      &:nth-child(6) { margin-left: 20px; }
+    }
+  }
+}
+.without-item-3 { // provisional-patents
+  .we-can-help-with__item-3 {
+    display: none;
+  }
+  .we-can-help-with__item {
+    &:nth-child(1) { margin-left: 0; }
+    &:nth-child(2) { margin-left: 20px; }
+    &:nth-child(4) { margin-left: 0; }
+    &:nth-child(5) { margin-left: 20px; }
+    &:nth-child(6) { margin-left: 0; }
+    @media (min-width: $desktope) {
+      &:nth-child(1) { margin-left: 0; }
+      &:nth-child(2) { margin-left: 20px; }
+      &:nth-child(4) { margin-left: 20px; }
+      &:nth-child(5) { margin-left: 0; }
+      &:nth-child(6) { margin-left: 20px; }
+    }
+  }
+}
+.without-item-4 { // plant-patents
+  .we-can-help-with__item-4 {
+    display: none;
+  }
+  .we-can-help-with__item {
+    &:nth-child(1) { margin-left: 0; }
+    &:nth-child(2) { margin-left: 20px; }
+    &:nth-child(3) { margin-left: 0; }
+    &:nth-child(5) { margin-left: 20px; }
+    &:nth-child(6) { margin-left: 0; }
+    @media (min-width: $desktope) {
+      &:nth-child(1) { margin-left: 0; }
+      &:nth-child(2) { margin-left: 20px; }
+      &:nth-child(3) { margin-left: 20px; }
+      &:nth-child(5) { margin-left: 0; }
+      &:nth-child(6) { margin-left: 20px; }
+    }
+  }
+}
+.without-item-5 { // trademarks
+  .we-can-help-with__item-5 {
+    display: none;
+  }
+  .we-can-help-with__item {
+    &:nth-child(1) { margin-left: 0; }
+    &:nth-child(2) { margin-left: 20px; }
+    &:nth-child(3) { margin-left: 0; }
+    &:nth-child(4) { margin-left: 20px; }
+    &:nth-child(6) { margin-left: 0; }
+    @media (min-width: $desktope) {
+      &:nth-child(1) { margin-left: 0; }
+      &:nth-child(2) { margin-left: 20px; }
+      &:nth-child(3) { margin-left: 20px; }
+      &:nth-child(4) { margin-left: 0; }
+      &:nth-child(6) { margin-left: 20px; }
+    }
+  }
+}
+.without-item-6 { // international-ip
+  .we-can-help-with__item-6 {
+    display: none;
+  }
+  .we-can-help-with__item {
+    &:nth-child(1) { margin-left: 0; }
+    &:nth-child(2) { margin-left: 20px; }
+    &:nth-child(3) { margin-left: 0; }
+    &:nth-child(4) { margin-left: 20px; }
+    &:nth-child(5) { margin-left: 0; }
+    @media (min-width: $desktope) {
+      &:nth-child(1) { margin-left: 0; }
+      &:nth-child(2) { margin-left: 20px; }
+      &:nth-child(3) { margin-left: 20px; }
+      &:nth-child(4) { margin-left: 0; }
+      &:nth-child(5) { margin-left: 20px; }
+    }
   }
 }

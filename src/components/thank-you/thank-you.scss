@@ -1,7 +1,9 @@
 .thank-you {
+  margin-top: 45px;
   padding-top: 35px;
   @media (min-width: $desktope) {
     min-height: 330px;
+    margin-top: 80px;
     padding: 0;
   }
   &__content {
