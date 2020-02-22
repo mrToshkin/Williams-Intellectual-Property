@@ -1,0 +1,41 @@
+extends layout/main
+
+block variables
+  - var title = 'Fee Structure - Williams Intellectual Property'
+  - var PageHeaderBackground = "fee-structure__header-background" //- class
+
+  //-var in ../we-can-help-with/we-can-help-with
+  - var weCanHelpWithHeaderTitle = "What We Do"
+
+block header
+  .header
+    include ../components/header/__nav
+    .container
+      .header__article
+        .breadcrumbs
+          ul.breadcrumbs__body
+            li.breadcrumbs__item
+              a(href="http://localhost:3000/index.html").breadcrumbs__link Home
+            li.breadcrumbs__item Fee Structure
+        article
+          h1 Fee Structure
+          p A patent is issued by the US Patent and Trademark Office, granting a temporary monopoly of the invention, in exchange for a full disclosure of the invention.
+        .submenu.submenu__item-2.article__submenu
+          a(href="http://").submenu__item-link
+            +icon("arrow", "14", "9")
+            span Contact us
+      .header__line
+        .header__social-icons
+        .header__anchor
+          a(href="#fee-structure").anchor
+            .anchor__element
+            span.visually-hidden Move below
+
+block content
+  include ../components/fee-structure/fee-structure
+  include ../components/call-us-today/call-us-today
+  include ../components/we-can-help-with/we-can-help-with
+  include ../components/sliders/slider-reviews
+  include ../components/sliders/slider-latest-news
+
+block script
