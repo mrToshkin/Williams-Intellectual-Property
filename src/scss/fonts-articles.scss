@@ -12,6 +12,14 @@ h2, h3 {
     line-height: 43px;
   }
 }
+h4 {
+  font-family: $font-head;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  text-transform: none;
+}
 p, h5, h6 { 
   font-family: $font-article;
   font-size: $base-font-size;
@@ -137,6 +145,57 @@ span.submenu__item-props {
 
       font-size: 18px;
       line-height: 29px;
+    }
+  }
+  &__spoiler {
+    display: inline-block;
+    
+    &-question {
+      margin-top: 63px;
+      summary {
+        position: relative;
+        display: block;
+
+        font-family: $font-head;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 32px;
+        text-transform: none;
+
+        cursor: pointer;
+        &::-webkit-details-marker {display: none;}
+      }
+    }
+    &-chevron {
+      position: absolute;
+      left: -22px;
+      top: 0;
+      
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 22px;
+      height: 32px;
+
+      fill: $color-main;
+      transition: 0.1s;
+      @media (min-width: $desktope) {
+        left: -55px;
+        width: 55px;
+      }
+    }
+    &-answer {
+      margin-top: 15px;
+
+      font-size: 18px;
+      line-height: 29px;
+    }
+    details[open] {
+      .icon-chevron--spoiler {
+        transform: rotate(180deg);
+        transition: 0.1s;
+      }
     }
   }
 }
