@@ -1,0 +1,8 @@
+.iframe-google-map {
+  margin-top: 40px;
+  @media (min-width: $desktope) {
+    margin-top: 0;
+    transform: translateY(-90px);
+    margin-bottom: -60px;
+  }
+}

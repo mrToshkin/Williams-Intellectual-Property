@@ -54,11 +54,14 @@
       padding-left: 13px;
       transform: translateY(-20%);
       
-      &--main-page {
+      &--main-page{
         min-height: 400px;
         margin-top: 15px;
         margin-bottom: 15px;
         transform: translateY(-12%);
+      }
+      &--contact {
+        min-height: 470px;
       }
     }
     .submenu__item-2 {
@@ -138,6 +141,13 @@
       font-size: 16px;
       line-height: 26px;
       color: $white-op5;
+    }
+    .header__article-contact {
+      margin-top: 5px;
+      color: $color-main;
+      &--bold {
+        font-weight: bold;
+      }
     }
     br {
       @media (min-width: $tablet) {
