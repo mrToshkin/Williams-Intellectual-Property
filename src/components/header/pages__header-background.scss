@@ -305,7 +305,7 @@
     top: 0; 
     left: 0;
     width: 100%; 
-    height: 470px;  
+    height: 600px;  
     opacity: 0.5;
     z-index: -1;
     background: url(../img/general/07a_article--mobile.jpg) bottom center no-repeat;
@@ -319,7 +319,7 @@
       background-size: cover;
     }
     @media (min-width: $desktope) {
-      height: 630px;
+      height: 687px;
       background: url(../img/general/07a_article--desktope.jpg) bottom center no-repeat;
       background: url(../img/general/07a_article--desktope.webp) bottom center no-repeat;
       background-size: cover;
@@ -327,7 +327,7 @@
     @media 
     (min-width: $desktope) and (min-resolution: $retina-dpi), 
     (min-width: $desktope) and (min-resolution: $retina-dppx) {
-      height: 630px;
+      height: 687px;
       background: url(../img/general/07a_article--desktope@2x.jpg) bottom center no-repeat;
       background: url(../img/general/07a_article--desktope@2x.webp) bottom center no-repeat;
       background-size: cover;

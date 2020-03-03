@@ -1,0 +1,6 @@
+.blog-article {
+  @media (min-width: $desktope) {
+    padding-top: 35px;
+  }
+  h3 { text-transform: none; }
+}

@@ -138,6 +138,7 @@
   &-absolute {
     @media (min-width: $desktope) {
       position: absolute;
+      z-index: 3;
       display: none;
     }
   }

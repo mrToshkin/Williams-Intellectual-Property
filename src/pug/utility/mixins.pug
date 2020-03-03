@@ -32,6 +32,14 @@ mixin icon-class-label(nameIcon, classIcon, $label, $width, $height, $viewBox)
    svg(class="svg-sprite-icon icon-"+nameIcon+" "+classIcon aria-label=""+$label width=""+$width height=""+$height)
       use(xlink:href="img/svg/sprite.svg#"+nameIcon)
 
+mixin article-social-icon-label(nameIcon, $label, $width, $height, $viewBox)
+  if($viewBox)
+    svg(class="svg-sprite-icon icon-"+nameIcon aria-label=""+$label width=""+$width height=""+$height viewBox=""+$viewBox)
+      use(xlink:href="img/svg/sprite.svg#"+nameIcon)
+  else
+   svg(class="svg-sprite-icon icon-"+nameIcon aria-label=""+$label width=""+$width height=""+$height)
+      use(xlink:href="img/svg/sprite-article-social.svg#"+nameIcon)
+
 //- mobile-first. (--desktope, --tablet, --phone)x2 retina, x2 webp = 12 pics
 //- (!) .webp is default exist
 //- img/file--desktope@x2.format
