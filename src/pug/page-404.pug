@@ -1,0 +1,20 @@
+extends layout/main
+
+block variables
+  - var title = '404 - Williams Intellectual Property'
+  - var PageHeaderBackground = "page-404__header-background" //- class
+
+block header
+  .header
+    include ../components/header/__nav
+    .container
+      .header__article.header__article--404
+        article
+          h1.h1--404 404
+          p Page not found
+        .submenu.submenu__item-2.article__submenu
+          a(href="http://localhost:3000/index.html").submenu__item-link
+            +icon("arrow", "14", "9")
+            span Back to homepage
+
+block script

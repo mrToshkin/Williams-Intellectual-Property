@@ -422,29 +422,33 @@
     height: 470px;  
     opacity: 0.5;
     z-index: -1;
-    background: url(../img/general/11_404--mobile.jpg) bottom center no-repeat;
-    background: url(../img/general/11_404--mobile.webp) bottom center no-repeat;
-    background-size: cover;
+    background: url(../img/general/11_404--desktope.jpg) bottom center no-repeat;
+    background: url(../img/general/11_404--desktope.webp) bottom center no-repeat;
+    background-size: contain;
+    background-color: $black;
     @media 
     (min-resolution: $retina-dpi), 
     (min-resolution: $retina-dppx) {
-      background: url(../img/general/11_404--mobile@2x.jpg) bottom center no-repeat;
-      background: url(../img/general/11_404--mobile@2x.webp) bottom center no-repeat;
-      background-size: cover;
-    }
-    @media (min-width: $desktope) {
-      height: 630px;
       background: url(../img/general/11_404--desktope.jpg) bottom center no-repeat;
       background: url(../img/general/11_404--desktope.webp) bottom center no-repeat;
-      background-size: cover;
+      background-size: contain;
+      background-color: $black;
+    }
+    @media (min-width: $desktope) {
+      height: 762px;
+      background: url(../img/general/11_404--desktope.jpg) bottom center no-repeat;
+      background: url(../img/general/11_404--desktope.webp) bottom center no-repeat;
+      background-size: contain;
+      background-color: $black;
     }
     @media 
     (min-width: $desktope) and (min-resolution: $retina-dpi), 
     (min-width: $desktope) and (min-resolution: $retina-dppx) {
-      height: 630px;
+      height: 762px;
       background: url(../img/general/11_404--desktope@2x.jpg) bottom center no-repeat;
       background: url(../img/general/11_404--desktope@2x.webp) bottom center no-repeat;
-      background-size: cover;
+      background-size: contain;
+      background-color: $black;
     }
   }
 }
@@ -471,7 +475,7 @@
       background-size: cover;
     }
     @media (min-width: $desktope) {
-      height: 630px;
+      height: 690px;
       background: url(../img/general/12_thank-you--desktope.jpg) bottom center no-repeat;
       background: url(../img/general/12_thank-you--desktope.webp) bottom center no-repeat;
       background-size: cover;
@@ -479,7 +483,7 @@
     @media 
     (min-width: $desktope) and (min-resolution: $retina-dpi), 
     (min-width: $desktope) and (min-resolution: $retina-dppx) {
-      height: 630px;
+      height: 690px;
       background: url(../img/general/12_thank-you--desktope@2x.jpg) bottom center no-repeat;
       background: url(../img/general/12_thank-you--desktope@2x.webp) bottom center no-repeat;
       background-size: cover;
