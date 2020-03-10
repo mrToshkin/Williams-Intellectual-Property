@@ -1,0 +1,429 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  background-color: $bgc-element;
+
+  @media (min-width: $desktope) {
+    background-color: unset;
+  }
+
+  &__body {
+    padding-bottom: 20px;
+    @media (min-width: $desktope) {
+      padding-bottom: 70px;
+      background-color: $bgc-element;
+    }
+  }
+  &__block {
+    margin-top: 20px;
+    @media (min-width: $desktope) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-top: 20px;
+    }
+    &--hiden { display: none; }
+  }
+  &__big-line {
+    width: 100%;
+    height: 2px;
+    margin-top: 65px;
+    margin-bottom: 30px;
+
+    background-color: rgba($white, 0.25);
+  }
+  &__header {
+    margin-top: 20px;
+    @media (min-width: $desktope) {
+      margin-top: 57px;
+    }
+  }
+  &__subheader {
+    margin-top: 20px;
+    @media (min-width: $desktope) {
+      margin-top: 40px;
+    }
+  }
+  &__label {
+    display: block;
+    margin-top: 23px;
+
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    color: $white-op8;
+
+    @media (min-width: $desktope) {
+      flex: 0 1 calc(50% - 10px);
+      &--full-width { flex: 1; }
+    }
+    .form__input {
+      display: inline-block;
+      width: 100%;
+      height: 40px;
+      margin-top: 5px;
+      padding: 0 18px;
+      border: none;
+
+      font-weight: normal;
+
+      background-color: rgba($white, 0.2);
+    }
+  }
+  &__label-checkbox {
+    position: relative;
+    display: block;
+    margin-top: 30px;
+    padding-left: 32px;
+
+    font-family: $font-article;
+    font-size: 16px;
+    line-height: 26px;
+    
+    user-select: none;
+    cursor: pointer;
+
+    &--full-width {
+      @media (min-width: $desktope) {
+        flex: 1 1 100%;
+      }
+    }
+    &--three-in-row {
+      @media (min-width: $desktope) {
+        flex: 0 1 calc(33.3% - 10px);
+        margin-top: 12px;
+      }
+    }
+    input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+    }
+    .checkmark {
+      position: absolute;
+      top: 2px;
+      left: 0;
+      height: 20px;
+      width: 20px;
+      background-color: rgba($white, 0.2);
+      transition: 0.2s;
+
+    }
+    &:hover input ~ .checkmark {
+      transition: 0.2s;
+      background-color: rgba($white, 0.4);
+    }
+    input:focus ~ .checkmark {
+      outline: $color-main auto 5px;
+    }
+    input:checked ~ .checkmark:after {
+      display: block;
+    }
+    .checkmark:after {
+      content: "";
+      position: absolute;
+      display: none;
+      left: 6px;
+      top: -1px;
+      width: 9px;
+      height: 16px;
+      border: solid #ffe195;
+      border-width: 0px 3px 3px 0;
+      transform: rotate(36deg);
+    }
+  }
+  &__label-radio {
+    position: relative;
+    display: block;
+    margin-top: 30px;
+    padding-left: 32px;
+
+    font-family: $font-article;
+    font-size: 16px;
+    line-height: 26px;
+    
+    user-select: none;
+    cursor: pointer;
+
+    &--three-in-row {
+      @media (min-width: $desktope) {
+        flex: 0 1 calc(33.3% - 10px);
+        margin-top: 12px;
+      }
+    }
+    input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+    }
+    .checkmark {
+      position: absolute;
+      top: 2px;
+      left: 0;
+      height: 20px;
+      width: 20px;
+      background-color: rgba($white, 0.2);
+      border-radius: 50%;
+      transition: 0.2s;
+    }
+    &:hover input ~ .checkmark {
+      transition: 0.2s;
+      background-color: rgba($white, 0.4);
+    }
+    input:focus ~ .checkmark {
+      outline: $color-main auto 5px;
+    }
+    input:checked ~ .checkmark:after {
+      display: block;
+    }
+    .checkmark:after {
+      content: "";
+      position: absolute;
+      display: none;
+      top: 5px;
+      left: 5px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: $color-main;
+    }
+  }
+  .file-upload {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 36px;
+
+    @media (min-width: $desktope) {
+      margin-top: 14px;
+      flex: 0 1 calc(50% - 10px);
+    }
+    label {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+      height: 40px;
+      margin-top: 4px;
+      
+      cursor: pointer;
+      
+      .file-upload__button-text {
+        position: relative;
+        
+        padding-left: 8px;
+  
+        font-family: $font-article;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+    
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $black;
+        &:after {
+          content: '';
+          position: absolute;
+          top: 7px;
+          left: -12px;
+  
+          width: 12px;
+          height: 2px;
+  
+          background-color: $black;
+        }
+        &:before {
+          content: '';
+          position: absolute;
+          top: 2px;
+          left: -7px;
+  
+          width: 2px;
+          height: 12px;
+  
+          background-color: $black;
+        }
+      }
+    }
+    input:focus ~ label {
+      outline: auto 5px;
+    }
+    .one-file {
+      & ~ .one-file {
+        label { display: none; }
+      }
+      &.error {
+        border: none;
+        .attached-file__file-name {
+          color: #ca4a17;
+        }
+      }
+    }
+    .file-upload__attached-file {
+      position: relative;
+      display: flex;
+      align-items: center;
+      &.hide-btn {
+        display: none;
+      }
+      .attached-file__file-name {
+        font-size: 16px;
+        line-height: 26px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .attached-file__button-delete-file {
+        position: relative;
+        transform: translateX(-4px);
+
+        display: block;
+        width: 16px;
+        height: 16px;
+
+        text-align: center;
+
+        cursor: pointer;
+        transition: all .2s;
+        &:before {
+          content: '';
+          position: absolute;
+          top: 7px;
+          left: 2px;
+
+          display: block;
+          width: 12px;
+          height: 2px;
+          border-radius: 2px;
+          transform: rotate(45deg);
+
+          background-color: #FF4242;
+        }
+        &:after {
+          content: '';
+          position: absolute;
+          top: 7px;
+          left: 2px;
+
+          display: block;
+          width: 12px;
+          height: 2px;
+          border-radius: 2px;
+          transform: rotate(135deg);
+
+          background-color: #FF4242;
+        }
+        &:hover, &:focus {
+          background-color: rgba($white, 0.2);
+        }
+      }
+    }
+  }
+  &__text { 
+    display: flex;
+    @media (min-width: $desktope) {
+      flex: 1 1 100%;
+      margin-top: 26px;
+    }
+  }
+  .info-notification {
+    width: 260px;
+    height: 120px;
+    padding-left: 28px;
+    padding-top: 24px;
+    
+    background-color: $bgc-notification;
+
+    &__catcher {
+      position: absolute;
+      right: -80px;
+      bottom: 0px;
+      
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 300px;
+      height: 180px;
+
+      opacity: 0;
+      visibility: hidden;
+      transition: 0.2s opacity, 0.2s visibility;
+      @media (min-width: $desktope) {
+        right: unset;
+        left: -6px;
+        bottom: -15px;
+      }
+    }
+    &__text {
+      font-size: 16px;
+      line-height: 26px;
+      text-transform: none;
+      color: $black;
+    }
+  }
+  &__icon-info {
+    position: relative;
+
+    display: block;
+    width: 14px;
+    height: 14px;
+    margin-left: 4px;
+    
+    border: 1px solid $color-main;
+    box-sizing: border-box;
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    &:after {
+      content: 'i';
+      position: absolute;
+      text-transform: none;
+      font-size: 11px;
+      left: 4.5px;
+      top: -2px;
+
+      color: $color-main;
+    }
+    &:focus {
+      outline: $color-main auto 5px;
+      .info-notification__catcher {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+    &:hover {
+      .info-notification__catcher {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+  &__submit {
+    @media (min-width: $desktope) {
+      background-color: $bgc-element;
+    }
+    &-button {
+      position: relative; 
+      
+      display: block;
+      width: 100%;
+      line-height: 41px;
+      margin-bottom: 20px;
+      border: none;
+
+      color: $black;
+      cursor: pointer;
+      @media (min-width: $desktope) { 
+        line-height: 50px;
+      }
+    }
+  }
+}

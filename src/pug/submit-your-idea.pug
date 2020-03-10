@@ -1,0 +1,30 @@
+extends layout/main
+
+block variables
+  - var title = 'Submit Your Idea Now - Williams Intellectual Property'
+  - var PageHeaderBackground = "submit-your-idea__header-background" //- class
+
+block header
+  .header.header--submit-your-idea
+    include ../components/header/__nav
+    .container
+      .header__article
+        .breadcrumbs
+          ul.breadcrumbs__body
+            li.breadcrumbs__item
+              a(href="http://localhost:3000/index.html").breadcrumbs__link Home
+            li.breadcrumbs__item Submit Your Idea Now
+        article
+          h1 Submit Your Idea Now
+          p Before you disclose your idea to anyone, including invention promotion companies, make sure you talk to a professional first. Our practitioners are ready to help you determine patentability of your invention before you spend thousands of dollars on promotion and reduction to practice.
+      .header__line
+        .header__social-icons
+        .header__anchor
+          a(href="#submit-your-idea").anchor
+            .anchor__element
+            span.visually-hidden Move below
+
+block content
+  include ../components/submit-your-idea/submit-your-idea
+
+block script

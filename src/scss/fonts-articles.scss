@@ -43,6 +43,23 @@ time {
   line-height: 20px;
   color: $white-op5;
 }
+form {
+  font-family: $font-article;
+  font-size: 14px;
+  line-height: 17px;
+  
+  .form__text {
+    font-weight: 600;
+    text-transform: uppercase;
+    color: rgba($white, 0.8);
+  }
+  input {
+    font-family: $font-article;
+    font-size: 16px;
+    line-height: 26px;
+    color: $white;
+  }
+}
 
 span.submenu__item-props {
   font-family: $font-article;
@@ -54,7 +71,8 @@ span.submenu__item-props {
 }
 
 .link-desktope,
-.link-mobile {
+.link-mobile,
+.form__submit-button {
   font-family: $font-article;
   font-weight: 600;
   font-size: 14px;

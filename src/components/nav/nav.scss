@@ -28,9 +28,7 @@
     order: 1;
     @media (min-width: $desktope) {
       width: 80px;
-      .icon-logo {
-        margin: 0 auto;
-      }
+      .icon-logo { margin: 0 auto; }
     }
   }
 
@@ -86,13 +84,8 @@
 }
 
 .icon {
-  &-logo {
-    -webkit-filter: invert(100%);
-    filter: invert(100%);
-  }
-  &-arrow{
-    fill: $color-main;
-  }
+  &-logo { filter: invert(100%); }
+  &-arrow{ fill: $color-main; }
 }
 
 .menu {
@@ -139,13 +132,14 @@
     @media (min-width: $desktope) {
       position: absolute;
       z-index: 3;
-      display: none;
+      
+      opacity: 0;
+      visibility: hidden;
+      transition: 0.2s opacity, 0.2s visibility;
     }
   }
 
-  &__item-link {
-    display: block;
-  }
+  &__item-link { display: block; }
 
   &__item- { &1, &2, &3, &4, &5 {
     box-sizing: content-box;
@@ -170,9 +164,7 @@
       text-transform: uppercase;
       color: $color-main;
     }
-    .icon-arrow {
-      margin-left: 12px;
-    }
+    .icon-arrow { margin-left: 12px; }
     &:hover {
       background-color: $bgc-link-hover;
       span {
@@ -198,12 +190,9 @@
 
       text-align: left;
     }
-    span {
-      color: $black;
-    }
-    .icon-arrow {
-      fill: $black;
-    }
+    span { color: $black; }
+    .icon-arrow { fill: $black; }
+    a:focus { outline-color: $white; }
   }
   &__item-5 { // section recently-won-patents
     background-color: $color-main;
@@ -217,7 +206,8 @@
   &:hover {
     .submenu-absolute {
       @media (min-width: $desktope) {
-        display: block;
+        opacity: 1;
+        visibility: visible;
       }
     }
   }
@@ -238,12 +228,12 @@
 }
 
 .header__nav--menu-opened {
-    position: absolute;
-    top: 0;
-    left: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
 
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 
   .nav {
     z-index: 3;
@@ -273,7 +263,6 @@
   .nav__phonenumber-link {
     @media (max-width: $tablet) {
       font-size: $base-font-size;
-      /* transition: 0.2s; */
     }
   }
   .nav__menu {
@@ -284,27 +273,15 @@
     order: 4;
     z-index: 3;
   }
-  .submenu__item- { &2, &3, &4 { 
-    display: inline-block;
-  }}
-  .submenu__item-1 {
-    display: none;
-  }
+  .submenu__item- { &2, &3, &4 { display: inline-block; }}
+  .submenu__item-1 { display: none; }
 }
 
 .header__nav--menu-closed {
-  .nav__submenu {
-    padding: 0;
-  }
-  .menu {
-    display: none;
-  }
-  .submenu__item- { &2, &3, &4 {
-    display: none;
-  }}
-  .submenu__item-1 {
-    display: block;
-  }
+  .nav__submenu { padding: 0; }
+  .menu { display: none; }
+  .submenu__item- { &2, &3, &4 { display: none; }}
+  .submenu__item-1 { display: block; }
 }
 //-------spacer boxes and fix absolute menu--------//
 .header__nav--menu-opened {
@@ -338,8 +315,6 @@
     background-color: $bgc-nav-sticky;
     transition: 0.3s;
 
-    .submenu-absolute {
-      position: fixed;
-    }
+    .submenu-absolute { position: fixed; }
   }
 }

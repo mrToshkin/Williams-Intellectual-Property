@@ -97,8 +97,11 @@ body {
     background-size: cover;
   }
 }
-a, button {
+a, button, input {
   outline-color: $color-main;
+}
+input:invalid {
+  outline-color: #FF4242;
 }
 .container {
   /* position: relative; */
@@ -126,12 +129,12 @@ a, button {
     padding: 0 70px;
   } */
   @media (min-width: $desktope) {
-    max-width: $desktope;
-    padding: 0 110px;
     display: flex;
     flex-direction: column;
     width: 100%;
+    max-width: $desktope;
     margin: 0 auto;
+    padding: 0 110px;
   }
 }
 
@@ -149,11 +152,37 @@ a, button {
   }
 }
 
+.container--form {
+  width: 100%;
+  max-width: $mobile;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (min-width: $desktope) {
+    max-width: $desktope;
+    width: 780px;
+    padding: 0 100px;
+  }
+  &-submit {
+    width: 100%;    
+    @media (min-width: $desktope) {
+      max-width: $desktope;
+      width: 780px;
+      margin: 0 auto;
+    }
+  }
+}
+
 .button{
   background-color: $color-main;
-    &:hover{
-      background-color: $bgc-link-hover;
-    } 
+  transition: 0.15s;
+
+  &:hover,
+  &:focus {
+    background-color: $bgc-link-hover;
+    transition: 0.15s;
+    outline-color: $white;
+  } 
 }
 
 @import "fonts-articles";
