@@ -7,13 +7,13 @@ section.submit-your-idea#submit-your-idea
         h4 Inventor Information
       .form__block
         label.form__label First name*
-          input(type="text" required).form__input
+          input(type="text" name="name").form__input
         label.form__label Last name*
-          input(type="text" required).form__input
+          input(type="text" name="lastname").form__input
         label.form__label Phone*
-          input(type="tel", name="" required).form__input
+          input(type="tel", name="phone").form__input
         label.form__label Email*
-          input(type="email", name="" required).form__input
+          input(type="email", name="email").form__input
       .form__block
         label.form__label-checkbox.form__label-checkbox--full-width.form__label-checkbox--top-block I US citizen
           input(type="checkbox", name="").form__input-checkbox
@@ -50,13 +50,13 @@ section.submit-your-idea#submit-your-idea
           h4 Co-inventor
         .form__block
           label.form__label First name*
-            input(type="text" required).form__input
+            input(type="text" name="name").form__input
           label.form__label Last name*
-            input(type="text" required).form__input
+            input(type="text" name="lastname").form__input
           label.form__label Phone*
-            input(type="tel", name="" required).form__input
+            input(type="tel", name="phone").form__input
           label.form__label Email*
-            input(type="email", name="" required).form__input
+            input(type="email", name="email").form__input
         .form__block
           label.form__label Country
             input(type="text").form__input
@@ -79,20 +79,20 @@ section.submit-your-idea#submit-your-idea
           h4 Invention and Patent Information
       .form__block
         label.form__label.form__label--full-width Title of Invention*
-          input(type="text" required).form__input
+          input(type="text" name="invention").form__input
         label.form__label-checkbox.form__label-checkbox--full-width I have any image or data files regarding my invention to upload at this time
           input(type="checkbox", name="").form__input-checkbox
           span.checkmark 
       .form__block
         span.form__text What kind of patents do you want to file?*
         label.form__label-checkbox.form__label-checkbox--three-in-row Provisional
-          input(type="checkbox", name="" required).form__input-checkbox
+          input(type="checkbox", name="provisional").form__input-checkbox
           span.checkmark
         label.form__label-checkbox.form__label-checkbox--three-in-row  Utility
-          input(type="checkbox", name="" required).form__input-checkbox
+          input(type="checkbox", name="utility").form__input-checkbox
           span.checkmark
         label.form__label-checkbox.form__label-checkbox--three-in-row Design
-          input(type="checkbox", name="" required).form__input-checkbox
+          input(type="checkbox", name="design").form__input-checkbox
           span.checkmark
       .form__block
         span.form__text Entity Status Declaration*
@@ -101,18 +101,17 @@ section.submit-your-idea#submit-your-idea
               .info-notification
                 span.info-notification__text Not sure of your entity status?
                 .submenu.submenu__item-2.article__submenu
-                  //-#NOTE show popup
-                  a(href="http://").submenu__item-link 
+                  a(href="#info-entity-status").submenu__item-link.js-popup-link 
                     +icon("arrow", "14", "9")
                     span learn more
         label.form__label-radio.form__label-radio--three-in-row Microentity
-          input(type="radio", name="Status Declaration" checked required).form__input-checkbox
+          input(type="radio", name="Status Declaration" checked).form__input-checkbox
           span.checkmark
         label.form__label-radio.form__label-radio--three-in-row Small entity
-          input(type="radio", name="Status Declaration" required).form__input-checkbox
+          input(type="radio", name="Status Declaration").form__input-checkbox
           span.checkmark
         label.form__label-radio.form__label-radio--three-in-row Corporate
-          input(type="radio", name="Status Declaration" required).form__input-checkbox
+          input(type="radio", name="Status Declaration").form__input-checkbox
           span.checkmark
     .container--form-submit.form__submit
       button(type="submit").form__submit-button.button Submit

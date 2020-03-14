@@ -1,3 +1,26 @@
+.link-button {
+  position: relative;
+
+  display: block;
+  width: 100%;
+  line-height: 41px;
+  border: none;
+
+  color: $black;
+  cursor: pointer;
+  background-color: $color-main;
+  transition: 0.15s;
+  /* @media (min-width: $desktope) {
+    line-height: 50px;
+  } */
+  &:hover,
+  &:focus {
+    background-color: $bgc-link-hover;
+    transition: 0.15s;
+    outline-color: $white;
+  }
+}
+
 .link-desktope {
   position: relative;
 
@@ -5,16 +28,13 @@
   width: 100%;
   line-height: 41px;
 
-  /* opacity: 0.4; */
   background-color: $bgc-element-button;
   transition: 0.15s;
 
   @media (min-width: $desktope) {
     display: block;
-
     line-height: 50px;
   }
-
   &:hover{
     color: $black;
     background-color: $color-main;
@@ -41,7 +61,8 @@
   }
 }
 
-.block-link:hover {
+.block-link:hover,
+.block-link:focus {
   cursor: pointer;
   h6, p {
     color: $white;

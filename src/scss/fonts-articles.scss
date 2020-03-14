@@ -53,7 +53,8 @@ form {
     text-transform: uppercase;
     color: rgba($white, 0.8);
   }
-  input {
+  input,
+  textarea {
     font-family: $font-article;
     font-size: 16px;
     line-height: 26px;
@@ -72,6 +73,7 @@ span.submenu__item-props {
 
 .link-desktope,
 .link-mobile,
+.link-button,
 .form__submit-button {
   font-family: $font-article;
   font-weight: 600;
@@ -154,6 +156,27 @@ span.submenu__item-props {
       margin-top: 14px;
       &::-moz-list-number {  
         font-weight: 600;
+      }
+    }
+    p {
+      margin-top: 14px;
+
+      font-family: $font-article;
+      font-size: 18px;
+      line-height: 29px;
+    }
+    &--nummod {
+      margin-top: 16px;
+      margin-left: 10px;
+      li { position: relative; list-style-type: none; }
+      ol { counter-reset: list 0; }
+      ol li:before {
+        position: absolute;
+        top: 0;
+        left: -10px;
+
+        counter-increment: list;
+        content: counter(list) ") ";
       }
     }
   }
@@ -282,4 +305,7 @@ span.submenu__item-props {
     }
   }
   .span--yellow { color: $color-main; }
+  .span--bold { font-weight: bold; }
+  .span--op8 { color: rgba($white, 0.8); }
+  .span--ttnone { text-transform: none; }
 }

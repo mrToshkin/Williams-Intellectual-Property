@@ -138,6 +138,12 @@
       transition: 0.2s opacity, 0.2s visibility;
     }
   }
+  &-absolute--js-visible {
+    @media (min-width: $desktope) {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
 
   &__item-link { display: block; }
 

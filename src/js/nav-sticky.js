@@ -14,4 +14,14 @@ $(document).ready(function() {
   
   stickyNav();
   $(window).scroll(function() {stickyNav();});
+
+  // accessibility submenu
+  $('.js-target').on('focus', function(u){
+    u.preventDefault;
+    $('.submenu-absolute').addClass('submenu-absolute--js-visible')
+  });
+  $('.js-target').on('focusout', function(o){
+    o.preventDefault;
+    $('.submenu-absolute').removeClass('submenu-absolute--js-visible')
+  });
 });

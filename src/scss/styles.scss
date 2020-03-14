@@ -97,11 +97,8 @@ body {
     background-size: cover;
   }
 }
-a, button, input {
+a, button, input, summary, textarea {
   outline-color: $color-main;
-}
-input:invalid {
-  outline-color: #FF4242;
 }
 .container {
   /* position: relative; */

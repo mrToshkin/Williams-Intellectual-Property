@@ -4,26 +4,26 @@
       nav.nav.footer__nav
         include ../nav/__menu
         .nav__submenu.submenu.submenu__item-5
-          a(href="http://").submenu__item-link
+          a(href="http://localhost:3000/submit-your-idea.html").submenu__item-link
             +icon("arrow", "14", "9")
             span Submin your idea now
       .footer__social
         .footer__accreditation.accreditation
-          a(href="http://").accreditation__bbb
+          a(href="#").accreditation__bbb
             picture
               source(type="image/webp", srcset="img/general/footer__bbb.webp")
               img(src="img/general/footer__bbb.png", alt="BBB Acredited Business")
             label.accreditation__label
               p.label__header BBB Rating: A+<br>
               p.label__body as of 6/5/2018<br>Click for Profile
-          a(href="http://")
+          a(href="#")
             +icon-label('footer__napp', 'napp', '80', '43')
         .footer__social-icons
           include ../__social-icons/footer__social-icons
       .footer__info
         .company-info
           span.company-info__rating Company rating:
-            a(href="http://").company-info__stars
+            a(href="#").company-info__stars
               +icon-class('star', 'star-5', '16', '16')
               +icon-class('star', 'star-4', '16', '16')
               +icon-class('star', 'star-3 icon-star--golden', '16', '16')

@@ -99,7 +99,8 @@
       }
     }
   }
-  .block-link:hover {
+  .block-link:hover,
+  .block-link:focus {
     .we-can-help-with__icons,
     .we-can-help-with__icon-bad {
       opacity: 1;

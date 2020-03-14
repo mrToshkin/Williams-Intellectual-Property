@@ -8,7 +8,10 @@
   @media (min-width: $desktope) {
     background-color: unset;
   }
-
+  &__accepted { 
+    display: none;
+    padding-top: 6px;
+  }
   &__body {
     padding-bottom: 20px;
     @media (min-width: $desktope) {
@@ -24,6 +27,12 @@
       justify-content: space-between;
       align-items: flex-end;
       margin-top: 20px;
+    }
+    &--column {
+      @media (min-width: $desktope) {
+        flex-direction: column;
+        align-items: stretch;
+      }
     }
     &--hiden { display: none; }
   }
@@ -71,6 +80,14 @@
 
       font-weight: normal;
 
+      background-color: rgba($white, 0.2);
+    }
+    .form__textarea {
+      width: 100%;
+      margin-top: 5px;
+      padding: 0 18px;
+      padding-top: 6px;
+      border: none;
       background-color: rgba($white, 0.2);
     }
   }
@@ -425,5 +442,9 @@
         line-height: 50px;
       }
     }
+  }
+  .error {
+    outline-color: $color-warning;
+    &::placeholder { color: rgba($white, 0.2); }
   }
 }
