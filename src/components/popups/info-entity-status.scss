@@ -3,7 +3,7 @@
   padding-top: 70px;
   padding-bottom: 20px;
   background-color: $bgc-popup;
-  @media (min-width: $tablet) {
+  @media (min-width: $desktope) {
     width: 980px;
     padding-top: 35px;
   }
@@ -11,7 +11,7 @@
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 30px;
-    @media (min-width: $tablet) {
+    @media (min-width: $desktope) {
       padding-left: 100px;
       padding-right: 100px;
       padding-bottom: 65px;

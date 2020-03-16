@@ -72,6 +72,7 @@ span.submenu__item-props {
 }
 
 .link-desktope,
+.link-tablet,
 .link-mobile,
 .link-button,
 .form__submit-button {
@@ -102,7 +103,7 @@ span.submenu__item-props {
 .article {
   &__header {
     margin-top: 20px;
-    @media (min-width: $desktope) {
+    @media (min-width: $tablet) {
       margin-top: 55px;
     }
   }
@@ -282,6 +283,11 @@ span.submenu__item-props {
     padding: 10px;
     
     background-color: rgba($white, 0.1);
+    @media (min-width: $tablet) {
+      align-items: center;
+      justify-content: flex-start;
+      & a:first-child { margin-left: 22px; }
+    }
     @media (min-width: $desktope) {
       align-items: center;
       justify-content: flex-start;

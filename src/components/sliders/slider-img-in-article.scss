@@ -77,6 +77,10 @@
     width: 280px;
     height: 160px;
     margin: 0 auto;
+    @media (min-width: $tablet) {
+      width: 548px;
+      height: 316px;
+    }
     @media (min-width: $desktope) {
       width: 780px;
       height: 450px;

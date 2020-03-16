@@ -43,6 +43,28 @@
   }
 }
 
+.link-tablet {
+  position: relative;
+
+  display: none;
+  width: 100%;
+  line-height: 41px;
+
+  background-color: $bgc-element-button;
+  transition: 0.15s;
+
+  @media (min-width: $tablet) {
+    display: block;
+    line-height: 50px;
+  }
+  &:hover{
+    color: $black;
+    background-color: $color-main;
+    opacity: 1;
+    transition: 0.15s;
+  }
+}
+
 .link-mobile {
   position: relative;
 

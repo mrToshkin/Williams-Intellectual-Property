@@ -3,6 +3,9 @@
   flex-direction: column;
   min-height: 470px;
 
+  @media (min-width: $tablet) {
+    min-height: 550px;
+  }
   @media (min-width: $desktope) {
     flex-direction: row;
     flex-wrap: wrap;
@@ -44,6 +47,9 @@
     display: none;
   }
   &__article {
+    @media (min-width: $tablet) {
+      margin-top: 50px;
+    }
     @media (min-width: $desktope) {
       flex: 0 1 50%;
       
@@ -105,7 +111,9 @@
   
   &__anchor {
     margin-top: 15px;
-    
+    @media (min-width: $tablet) {
+      margin-top: 50px;
+    }
     @media (min-width: $desktope) {
       flex: 0 1 50%;
       

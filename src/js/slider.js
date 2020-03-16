@@ -9,10 +9,16 @@ $(document).ready(function() {
     mobileFirst: true,
     responsive: [
       {
-        breakpoint: 767,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
         }
       },
       {
@@ -32,10 +38,16 @@ $(document).ready(function() {
     mobileFirst: true,
     responsive: [
       {
-        breakpoint: 767,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
         }
       },
       {

@@ -38,6 +38,10 @@
 
     background-color: $bgc-element;
 
+    @media (min-width: $tablet) {
+      flex: 0 1 calc(33.3% - 10px);
+      min-height: 199px;
+    }
     @media (min-width: $desktope) {
       flex: 1 1 30%;
       justify-content: flex-end;
@@ -47,7 +51,7 @@
     }
     &:nth-child(2n) {
       margin-left: 20px;
-      @media (min-width: $desktope) {
+      @media (min-width: $tablet) {
         margin-left: 0;
       }
     }
@@ -136,7 +140,7 @@
   }
   .we-can-help-with__body {
     flex-direction: column;
-    @media (min-width: $desktope) {
+    @media (min-width: $tablet) {
       flex-direction: row;
     }
   }
@@ -144,6 +148,10 @@
     flex-direction: column;
     justify-content: flex-start;
     min-height: 288px;
+    @media (min-width: $tablet) {
+      min-height: 400px;
+      padding-bottom: 20px;
+    }
     &:nth-child(2n) {
       margin-left: 0;
       @media (min-width: $desktope) {
@@ -163,7 +171,7 @@
       display: block;
       height: 100%;
     }
-    .link-desktope {
+    .link-tablet {
       align-self: flex-end;
       height: auto;
     }
@@ -181,7 +189,8 @@
     &:nth-child(4) { margin-left: 0; }
     &:nth-child(5) { margin-left: 20px; }
     &:nth-child(6) { margin-left: 0; }
-    @media (min-width: $desktope) {
+    @media (min-width: $tablet) {
+      flex: 1 1 30%;
       &:nth-child(2) { margin-left: 0; }
       &:nth-child(3) { margin-left: 20px; }
       &:nth-child(4) { margin-left: 20px; }
@@ -200,7 +209,8 @@
     &:nth-child(4) { margin-left: 0; }
     &:nth-child(5) { margin-left: 20px; }
     &:nth-child(6) { margin-left: 0; }
-    @media (min-width: $desktope) {
+    @media (min-width: $tablet) {
+      flex: 1 1 30%;
       &:nth-child(1) { margin-left: 0; }
       &:nth-child(3) { margin-left: 20px; }
       &:nth-child(4) { margin-left: 20px; }
@@ -219,7 +229,8 @@
     &:nth-child(4) { margin-left: 0; }
     &:nth-child(5) { margin-left: 20px; }
     &:nth-child(6) { margin-left: 0; }
-    @media (min-width: $desktope) {
+    @media (min-width: $tablet) {
+      flex: 1 1 30%;
       &:nth-child(1) { margin-left: 0; }
       &:nth-child(2) { margin-left: 20px; }
       &:nth-child(4) { margin-left: 20px; }
@@ -238,7 +249,8 @@
     &:nth-child(3) { margin-left: 0; }
     &:nth-child(5) { margin-left: 20px; }
     &:nth-child(6) { margin-left: 0; }
-    @media (min-width: $desktope) {
+    @media (min-width: $tablet) {
+      flex: 1 1 30%;
       &:nth-child(1) { margin-left: 0; }
       &:nth-child(2) { margin-left: 20px; }
       &:nth-child(3) { margin-left: 20px; }
@@ -257,7 +269,8 @@
     &:nth-child(3) { margin-left: 0; }
     &:nth-child(4) { margin-left: 20px; }
     &:nth-child(6) { margin-left: 0; }
-    @media (min-width: $desktope) {
+    @media (min-width: $tablet) {
+      flex: 1 1 30%;
       &:nth-child(1) { margin-left: 0; }
       &:nth-child(2) { margin-left: 20px; }
       &:nth-child(3) { margin-left: 20px; }
@@ -276,7 +289,8 @@
     &:nth-child(3) { margin-left: 0; }
     &:nth-child(4) { margin-left: 20px; }
     &:nth-child(5) { margin-left: 0; }
-    @media (min-width: $desktope) {
+    @media (min-width: $tablet) {
+      flex: 1 1 30%;
       &:nth-child(1) { margin-left: 0; }
       &:nth-child(2) { margin-left: 20px; }
       &:nth-child(3) { margin-left: 20px; }

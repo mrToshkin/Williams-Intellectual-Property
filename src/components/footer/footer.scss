@@ -22,6 +22,16 @@
       background: url(../img/general/footer--mobile@2x.jpg) center center no-repeat;
       background: url(../img/general/footer--mobile@2x.webp) center center no-repeat;
     }
+    @media (min-width: $tablet) {
+      background: url(../img/general/footer--desktope.jpg) center center no-repeat;
+      background: url(../img/general/footer--desktope.webp) center center no-repeat;
+    }
+    @media 
+    (min-width: $tablet) and (min-resolution: $retina-dpi), 
+    (min-width: $tablet) and (min-resolution: $retina-dppx) {
+      background: url(../img/general/footer--desktope@2x.jpg) center center no-repeat;
+      background: url(../img/general/footer--desktope@2x.webp) center center no-repeat;
+    }
     @media (min-width: $desktope) {
       background: url(../img/general/footer--desktope.jpg) center center no-repeat;
       background: url(../img/general/footer--desktope.webp) center center no-repeat;
@@ -40,6 +50,10 @@
   min-height: 540px;
   padding-bottom: 30px;
 
+  @media (min-width: $tablet) {
+    min-height: 460px;
+    padding-bottom: 40px;
+  }
   @media (min-width: $desktope) {
     min-height: 290px;
     padding-bottom: 53px;
@@ -98,7 +112,7 @@
 
   &__social {
     margin-top: 43px;
-    @media (min-width: $desktope) {
+    @media (min-width: $tablet) {
       display: flex;
       justify-content: space-between;
       margin-top: 10px;
@@ -152,7 +166,7 @@
 .accreditation {
   display: flex;
   justify-content: space-between;
-  @media (min-width: $desktope) {
+  @media (min-width: $tablet) {
     justify-content: flex-start;
   }
   &__bbb {

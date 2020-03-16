@@ -9,7 +9,7 @@
   }
   .review-item,
   .blog__item {
-    @media (min-width: $desktope) {
+    @media (min-width: $tablet) {
       width: 300px;
       padding: 0 10px;
     }

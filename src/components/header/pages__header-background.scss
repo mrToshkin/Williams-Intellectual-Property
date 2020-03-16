@@ -14,6 +14,20 @@
     background: url(../img/general/01_main-header--mobile@2x.webp) top center no-repeat;
     background-size: cover;
 
+    @media (min-width: $tablet) {
+      height: 983px;
+      background: url(../img/general/01_main-header--desktope.jpg) center center no-repeat;
+      background: url(../img/general/01_main-header--desktope.webp) center center no-repeat;
+      background-size: cover;
+    }
+    @media 
+    (min-width: $tablet) and (min-resolution: $retina-dpi), 
+    (min-width: $tablet) and (min-resolution: $retina-dppx) {
+      height: 983px;
+      background: url(../img/general/01_main-header--desktope@2x.jpg) center center no-repeat;
+      background: url(../img/general/01_main-header--desktope@2x.webp) center center no-repeat;
+      background-size: cover;
+    }
     @media (min-width: $desktope) {
       height: 983px;
       background: url(../img/general/01_main-header--desktope.jpg) center center no-repeat;
@@ -50,6 +64,20 @@
     (min-resolution: $retina-dppx) {
       background: url(../img/general/02_who-we-are--mobile@2x.jpg) bottom center no-repeat;
       background: url(../img/general/02_who-we-are--mobile@2x.webp) bottom center no-repeat;
+      background-size: cover;
+    }
+    @media (min-width: $tablet) {
+      height: 550px;
+      background: url(../img/general/02_who-we-are--desktope.jpg) bottom center no-repeat;
+      background: url(../img/general/02_who-we-are--desktope.webp) bottom center no-repeat;
+      background-size: cover;
+    }
+    @media 
+    (min-width: $tablet) and (min-resolution: $retina-dpi), 
+    (min-width: $tablet) and (min-resolution: $retina-dppx) {
+      height: 550px;
+      background: url(../img/general/02_who-we-are--desktope@2x.jpg) bottom center no-repeat;
+      background: url(../img/general/02_who-we-are--desktope@2x.webp) bottom center no-repeat;
       background-size: cover;
     }
     @media (min-width: $desktope) {
@@ -90,6 +118,20 @@
       background: url(../img/general/03_what-we-do--mobile@2x.webp) bottom center no-repeat;
       background-size: cover;
     }
+    @media (min-width: $tablet) {
+      height: 550px;
+      background: url(../img/general/03_what-we-do--desktope.jpg) bottom center no-repeat;
+      background: url(../img/general/03_what-we-do--desktope.webp) bottom center no-repeat;
+      background-size: cover;
+    }
+    @media 
+    (min-width: $tablet) and (min-resolution: $retina-dpi), 
+    (min-width: $tablet) and (min-resolution: $retina-dppx) {
+      height: 550px;
+      background: url(../img/general/03_what-we-do--desktope@2x.jpg) bottom center no-repeat;
+      background: url(../img/general/03_what-we-do--desktope@2x.webp) bottom center no-repeat;
+      background-size: cover;
+    }
     @media (min-width: $desktope) {
       height: 630px;
       background: url(../img/general/03_what-we-do--desktope.jpg) bottom center no-repeat;
@@ -126,6 +168,20 @@
     (min-resolution: $retina-dppx) {
       background: url(../img/general/03a_utility-patents--mobile@2x.jpg) bottom center no-repeat;
       background: url(../img/general/03a_utility-patents--mobile@2x.webp) bottom center no-repeat;
+      background-size: cover;
+    }
+    @media (min-width: $tablet) {
+      height: 550px;
+      background: url(../img/general/03a_utility-patents--desktope.jpg) bottom center no-repeat;
+      background: url(../img/general/03a_utility-patents--desktope.webp) bottom center no-repeat;
+      background-size: cover;
+    }
+    @media 
+    (min-width: $tablet) and (min-resolution: $retina-dpi), 
+    (min-width: $tablet) and (min-resolution: $retina-dppx) {
+      height: 550px;
+      background: url(../img/general/03a_utility-patents--desktope@2x.jpg) bottom center no-repeat;
+      background: url(../img/general/03a_utility-patents--desktope@2x.webp) bottom center no-repeat;
       background-size: cover;
     }
     @media (min-width: $desktope) {
@@ -166,6 +222,20 @@
       background: url(../img/general/04_patenting-process--mobile@2x.webp) bottom center no-repeat;
       background-size: cover;
     }
+    @media (min-width: $tablet) {
+      height: 550px;
+      background: url(../img/general/04_patenting-process--desktope.jpg) bottom center no-repeat;
+      background: url(../img/general/04_patenting-process--desktope.webp) bottom center no-repeat;
+      background-size: cover;
+    }
+    @media 
+    (min-width: $tablet) and (min-resolution: $retina-dpi), 
+    (min-width: $tablet) and (min-resolution: $retina-dppx) {
+      height: 550px;
+      background: url(../img/general/04_patenting-process--desktope@2x.jpg) bottom center no-repeat;
+      background: url(../img/general/04_patenting-process--desktope@2x.webp) bottom center no-repeat;
+      background-size: cover;
+    }
     @media (min-width: $desktope) {
       height: 630px;
       background: url(../img/general/04_patenting-process--desktope.jpg) bottom center no-repeat;
@@ -202,6 +272,20 @@
     (min-resolution: $retina-dppx) {
       background: url(../img/general/05_free-structure--mobile@2x.jpg) bottom center no-repeat;
       background: url(../img/general/05_free-structure--mobile@2x.webp) bottom center no-repeat;
+      background-size: cover;
+    }
+    @media (min-width: $tablet) {
+      height: 550px;
+      background: url(../img/general/05_free-structure--desktope.jpg) bottom center no-repeat;
+      background: url(../img/general/05_free-structure--desktope.webp) bottom center no-repeat;
+      background-size: cover;
+    }
+    @media 
+    (min-width: $tablet) and (min-resolution: $retina-dpi), 
+    (min-width: $tablet) and (min-resolution: $retina-dppx) {
+      height: 550px;
+      background: url(../img/general/05_free-structure--desktope@2x.jpg) bottom center no-repeat;
+      background: url(../img/general/05_free-structure--desktope@2x.webp) bottom center no-repeat;
       background-size: cover;
     }
     @media (min-width: $desktope) {
@@ -242,6 +326,20 @@
       background: url(../img/general/06-faq--mobile@2x.webp) bottom center no-repeat;
       background-size: cover;
     }
+    @media (min-width: $tablet) {
+      height: 550px;
+      background: url(../img/general/06-faq--desktope.jpg) bottom center no-repeat;
+      background: url(../img/general/06-faq--desktope.webp) bottom center no-repeat;
+      background-size: cover;
+    }
+    @media 
+    (min-width: $tablet) and (min-resolution: $retina-dpi), 
+    (min-width: $tablet) and (min-resolution: $retina-dppx) {
+      height: 550px;
+      background: url(../img/general/06-faq--desktope@2x.jpg) bottom center no-repeat;
+      background: url(../img/general/06-faq--desktope@2x.webp) bottom center no-repeat;
+      background-size: cover;
+    }
     @media (min-width: $desktope) {
       height: 630px;
       background: url(../img/general/06-faq--desktope.jpg) bottom center no-repeat;
@@ -278,6 +376,20 @@
     (min-resolution: $retina-dppx) {
       background: url(../img/general/07_blog--mobile@2x.jpg) bottom center no-repeat;
       background: url(../img/general/07_blog--mobile@2x.webp) bottom center no-repeat;
+      background-size: cover;
+    }
+    @media (min-width: $tablet) {
+      height: 550px;
+      background: url(../img/general/07_blog--desktope.jpg) bottom center no-repeat;
+      background: url(../img/general/07_blog--desktope.webp) bottom center no-repeat;
+      background-size: cover;
+    }
+    @media 
+    (min-width: $tablet) and (min-resolution: $retina-dpi), 
+    (min-width: $tablet) and (min-resolution: $retina-dppx) {
+      height: 550px;
+      background: url(../img/general/07_blog--desktope@2x.jpg) bottom center no-repeat;
+      background: url(../img/general/07_blog--desktope@2x.webp) bottom center no-repeat;
       background-size: cover;
     }
     @media (min-width: $desktope) {
@@ -318,6 +430,20 @@
       background: url(../img/general/07a_article--mobile@2x.webp) bottom center no-repeat;
       background-size: cover;
     }
+    @media (min-width: $tablet) {
+      height: 600px;
+      background: url(../img/general/07a_article--desktope.jpg) bottom center no-repeat;
+      background: url(../img/general/07a_article--desktope.webp) bottom center no-repeat;
+      background-size: cover;
+    }
+    @media 
+    (min-width: $tablet) and (min-resolution: $retina-dpi), 
+    (min-width: $tablet) and (min-resolution: $retina-dppx) {
+      height: 600px;
+      background: url(../img/general/07a_article--desktope@2x.jpg) bottom center no-repeat;
+      background: url(../img/general/07a_article--desktope@2x.webp) bottom center no-repeat;
+      background-size: cover;
+    }
     @media (min-width: $desktope) {
       height: 687px;
       background: url(../img/general/07a_article--desktope.jpg) bottom center no-repeat;
@@ -356,6 +482,20 @@
       background: url(../img/general/08_contact--mobile@2x.webp) bottom center no-repeat;
       background-size: cover;
     }
+    @media (min-width: $tablet) {
+      height: 550px;
+      background: url(../img/general/08_contact--desktope.jpg) bottom center no-repeat;
+      background: url(../img/general/08_contact--desktope.webp) bottom center no-repeat;
+      background-size: cover;
+    }
+    @media 
+    (min-width: $tablet) and (min-resolution: $retina-dpi), 
+    (min-width: $tablet) and (min-resolution: $retina-dppx) {
+      height: 550px;
+      background: url(../img/general/08_contact--desktope@2x.jpg) bottom center no-repeat;
+      background: url(../img/general/08_contact--desktope@2x.webp) bottom center no-repeat;
+      background-size: cover;
+    }
     @media (min-width: $desktope) {
       height: 630px;
       background: url(../img/general/08_contact--desktope.jpg) bottom center no-repeat;
@@ -392,6 +532,20 @@
     (min-resolution: $retina-dppx) {
       background: url(../img/general/09_submit-your-idea-now--mobile@2x.jpg) bottom center no-repeat;
       background: url(../img/general/09_submit-your-idea-now--mobile@2x.webp) bottom center no-repeat;
+      background-size: cover;
+    }
+    @media (min-width: $tablet) {
+      height: 550px;
+      background: url(../img/general/09_submit-your-idea-now--desktope.jpg) bottom center no-repeat;
+      background: url(../img/general/09_submit-your-idea-now--desktope.webp) bottom center no-repeat;
+      background-size: cover;
+    }
+    @media 
+    (min-width: $tablet) and (min-resolution: $retina-dpi), 
+    (min-width: $tablet) and (min-resolution: $retina-dppx) {
+      height: 550px;
+      background: url(../img/general/09_submit-your-idea-now--desktope@2x.jpg) bottom center no-repeat;
+      background: url(../img/general/09_submit-your-idea-now--desktope@2x.webp) bottom center no-repeat;
       background-size: cover;
     }
     @media (min-width: $desktope) {
@@ -434,6 +588,22 @@
       background-size: contain;
       background-color: $black;
     }
+    @media (min-width: $tablet) {
+      height: 550px;
+      background: url(../img/general/11_404--desktope.jpg) bottom center no-repeat;
+      background: url(../img/general/11_404--desktope.webp) bottom center no-repeat;
+      background-size: contain;
+      background-color: $black;
+    }
+    @media 
+    (min-width: $tablet) and (min-resolution: $retina-dpi), 
+    (min-width: $tablet) and (min-resolution: $retina-dppx) {
+      height: 550px;
+      background: url(../img/general/11_404--desktope@2x.jpg) bottom center no-repeat;
+      background: url(../img/general/11_404--desktope@2x.webp) bottom center no-repeat;
+      background-size: contain;
+      background-color: $black;
+    }
     @media (min-width: $desktope) {
       height: 762px;
       background: url(../img/general/11_404--desktope.jpg) bottom center no-repeat;
@@ -472,6 +642,20 @@
     (min-resolution: $retina-dppx) {
       background: url(../img/general/12_thank-you--mobile@2x.jpg) bottom center no-repeat;
       background: url(../img/general/12_thank-you--mobile@2x.webp) bottom center no-repeat;
+      background-size: cover;
+    }
+    @media (min-width: $tablet) {
+      height: 550px;
+      background: url(../img/general/12_thank-you--desktope.jpg) bottom center no-repeat;
+      background: url(../img/general/12_thank-you--desktope.webp) bottom center no-repeat;
+      background-size: cover;
+    }
+    @media 
+    (min-width: $tablet) and (min-resolution: $retina-dpi), 
+    (min-width: $tablet) and (min-resolution: $retina-dppx) {
+      height: 550px;
+      background: url(../img/general/12_thank-you--desktope@2x.jpg) bottom center no-repeat;
+      background: url(../img/general/12_thank-you--desktope@2x.webp) bottom center no-repeat;
       background-size: cover;
     }
     @media (min-width: $desktope) {

@@ -14,6 +14,9 @@
   }
   &__body {
     padding-bottom: 20px;
+    @media (min-width: $tablet) {
+      padding-bottom: 70px;
+    }
     @media (min-width: $desktope) {
       padding-bottom: 70px;
       background-color: $bgc-element;
@@ -21,7 +24,7 @@
   }
   &__block {
     margin-top: 20px;
-    @media (min-width: $desktope) {
+    @media (min-width: $tablet) {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -29,7 +32,7 @@
       margin-top: 20px;
     }
     &--column {
-      @media (min-width: $desktope) {
+      @media (min-width: $tablet) {
         flex-direction: column;
         align-items: stretch;
       }
@@ -46,13 +49,13 @@
   }
   &__header {
     margin-top: 20px;
-    @media (min-width: $desktope) {
+    @media (min-width: $tablet) {
       margin-top: 57px;
     }
   }
   &__subheader {
     margin-top: 20px;
-    @media (min-width: $desktope) {
+    @media (min-width: $tablet) {
       margin-top: 40px;
     }
   }
@@ -66,7 +69,7 @@
 
     color: $white-op8;
 
-    @media (min-width: $desktope) {
+    @media (min-width: $tablet) {
       flex: 0 1 calc(50% - 10px);
       &--full-width { flex: 1; }
     }
@@ -105,12 +108,12 @@
     cursor: pointer;
 
     &--full-width {
-      @media (min-width: $desktope) {
+      @media (min-width: $tablet) {
         flex: 1 1 100%;
       }
     }
     &--three-in-row {
-      @media (min-width: $desktope) {
+      @media (min-width: $tablet) {
         flex: 0 1 calc(33.3% - 10px);
         margin-top: 12px;
       }
@@ -169,7 +172,7 @@
     cursor: pointer;
 
     &--three-in-row {
-      @media (min-width: $desktope) {
+      @media (min-width: $tablet) {
         flex: 0 1 calc(33.3% - 10px);
         margin-top: 12px;
       }
@@ -218,7 +221,7 @@
     flex-direction: column-reverse;
     margin-top: 36px;
 
-    @media (min-width: $desktope) {
+    @media (min-width: $tablet) {
       margin-top: 14px;
       flex: 0 1 calc(50% - 10px);
     }
@@ -345,7 +348,7 @@
   }
   &__text { 
     display: flex;
-    @media (min-width: $desktope) {
+    @media (min-width: $tablet) {
       flex: 1 1 100%;
       margin-top: 26px;
     }
@@ -372,7 +375,7 @@
       opacity: 0;
       visibility: hidden;
       transition: 0.2s opacity, 0.2s visibility;
-      @media (min-width: $desktope) {
+      @media (min-width: $tablet) {
         right: unset;
         left: -6px;
         bottom: -15px;

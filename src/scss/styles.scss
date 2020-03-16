@@ -143,6 +143,10 @@ a, button, input, summary, textarea {
   margin: 0 auto;
   padding: 0 20px;
 
+  @media (min-width: $tablet) {
+    max-width: $tablet;
+    padding: 0 110px;
+  }
   @media (min-width: $desktope) {
     max-width: $desktope;
     padding: 0 310px;
@@ -155,6 +159,10 @@ a, button, input, summary, textarea {
   margin: 0 auto;
   padding: 0 20px;
 
+  @media (min-width: $tablet) {
+    max-width: $tablet;
+    padding: 0 100px;
+  }
   @media (min-width: $desktope) {
     max-width: $desktope;
     width: 780px;
