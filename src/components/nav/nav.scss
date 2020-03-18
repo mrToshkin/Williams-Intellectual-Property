@@ -331,4 +331,27 @@
 
     .submenu-absolute { position: fixed; }
   }
+  .nav__burger {
+    position: fixed;
+    top: 0px;
+    right: 16px;
+    z-index: 3;
+
+    width: 55px;
+    height: 55px;
+
+    background: $bgc-nav-sticky;
+    @media (min-width: $desktope) {
+      display: none;
+    }
+  }
+  .nav__phonenumber {
+    margin-right: 47px;
+    @media (min-width: $tablet) {
+      margin-right: 230px;
+    }
+    @media (min-width: $desktope) {
+      margin-right: 0;
+    }
+  }
 }

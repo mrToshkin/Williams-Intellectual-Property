@@ -6,8 +6,11 @@ $(document).ready(function() {
 			         
   if (scrollTop > stickyNavTop) { 
       $('.header__nav-catcher').addClass('header__nav--sticky');
-      $('.header__nav--sticky').css('top', scrollTop + 'px');
       $('.icon-logo-changer').attr("srcset", "img/svg/logo-sticked.svg");
+      $('.header__nav--sticky').css('top', scrollTop + 'px');
+      $('.nav__burger').css('top', scrollTop + 'px');
+      $('.header__nav').css('top', scrollTop + 'px');
+      $('.bg-mobile-menu').css('top', scrollTop + 'px');
     } else {
       $('.header__nav-catcher').removeClass('header__nav--sticky');
       $('.icon-logo-changer').attr("srcset", "img/svg/logo.svg");
