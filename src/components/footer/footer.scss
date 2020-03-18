@@ -25,12 +25,14 @@
     @media (min-width: $tablet) {
       background: url(../img/general/footer--desktope.jpg) center center no-repeat;
       background: url(../img/general/footer--desktope.webp) center center no-repeat;
+      background-size: cover;
     }
     @media 
     (min-width: $tablet) and (min-resolution: $retina-dpi), 
     (min-width: $tablet) and (min-resolution: $retina-dppx) {
       background: url(../img/general/footer--desktope@2x.jpg) center center no-repeat;
       background: url(../img/general/footer--desktope@2x.webp) center center no-repeat;
+      background-size: cover;
     }
     @media (min-width: $desktope) {
       background: url(../img/general/footer--desktope.jpg) center center no-repeat;

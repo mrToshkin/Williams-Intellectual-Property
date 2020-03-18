@@ -1,10 +1,12 @@
 $(document).ready(function() {
+  // code for parallax effect
   var stickyNavTop = $('.header__nav-catcher').offset().top;
   var stickyNav = function(){
-    var scrollTop = $(window).scrollTop(); 
+  var scrollTop = $('.wrapper-parallax').scrollTop(); 
 			         
   if (scrollTop > stickyNavTop) { 
       $('.header__nav-catcher').addClass('header__nav--sticky');
+      $('.header__nav--sticky').css('top', scrollTop + 'px');
       $('.icon-logo-changer').attr("srcset", "img/svg/logo-sticked.svg");
     } else {
       $('.header__nav-catcher').removeClass('header__nav--sticky');
@@ -13,7 +15,7 @@ $(document).ready(function() {
   };
   
   stickyNav();
-  $(window).scroll(function() {stickyNav();});
+  $('.wrapper-parallax').scroll(function() {stickyNav();});
 
   // accessibility submenu
   $('.js-target').on('focus', function(u){
@@ -25,3 +27,20 @@ $(document).ready(function() {
     $('.submenu-absolute').removeClass('submenu-absolute--js-visible')
   });
 });
+
+/* // default code without parallax
+  var stickyNavTop = $('.header__nav-catcher').offset().top;
+  var stickyNav = function(){
+  var scrollTop = $(window).scrollTop(); 
+			         
+  if (scrollTop > stickyNavTop) { 
+      $('.header__nav-catcher').addClass('header__nav--sticky');
+      $('.icon-logo-changer').attr("srcset", "img/svg/logo-sticked.svg");
+    } else {
+      $('.header__nav-catcher').removeClass('header__nav--sticky');
+      $('.icon-logo-changer').attr("srcset", "img/svg/logo.svg");
+    }
+  };
+  
+  stickyNav();
+  $(window).scroll(function() {stickyNav();}); */

@@ -32,11 +32,13 @@ html(lang="en")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js")
     <![endif]-->
   body
-    div(class=""+PageHeaderBackground)
+    div(class="wrapper-parallax "+PageHeaderBackground)
+      .bg-parallax-bottom-cover
+      .bg-middle-page
+      .bg-mobile-menu
       block header
       block content
       include ../../components/footer/footer
-      .bg-mobile-menu
     include ../../components/popups/contact-us
     block popups
     block script

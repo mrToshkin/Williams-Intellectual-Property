@@ -228,10 +228,11 @@
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 2;
 
   width: 100%;
-  height: 100%;
+  min-height: 560px;
+  height: 100vh;
 
   background-color: $bgc-mobile-menu;
   transition: 0.2s;
@@ -326,7 +327,7 @@
     width: 100%;
     
     background-color: $bgc-nav-sticky;
-    transition: 0.3s;
+    /* transition: 0.3s; */
 
     .submenu-absolute { position: fixed; }
   }
