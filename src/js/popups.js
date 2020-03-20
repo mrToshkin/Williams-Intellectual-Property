@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  $('.popup').removeClass('no-js-popup');
   var popupLink = function() {
     $('.js-popup-link').magnificPopup({
       showCloseBtn: false,

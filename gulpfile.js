@@ -31,10 +31,10 @@ gulp.task('scss', () => {
     .pipe(plumber())
     .pipe(sourcemaps.init())
     .pipe(sass())
-    /* .pipe(autoprefixer({
+    .pipe(autoprefixer({
       overrideBrowserslist:  ['last 3 versions'],
       cascade: false
-    })) */
+    }))
     .pipe(csscomb())
     .pipe(gulp.dest('./build/css'))
     .pipe(browserSync.reload({ stream: true }))
