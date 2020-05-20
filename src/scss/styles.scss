@@ -87,6 +87,7 @@ body {
 a, button, input, summary, textarea {
   outline-color: $color-main;
 }
+address { font-style: normal; }
 .container {
   display: flex;
   flex-direction: column;

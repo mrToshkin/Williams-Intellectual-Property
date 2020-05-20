@@ -1,12 +1,11 @@
-.article__social-block
-  a(href="#")
-    +article-social-icon-label('article-fb-like', 'facebook like', '67', '20')
-  a(href="#")
-    +article-social-icon-label('article-fb-share', 'facebook share', '41', '20')
-  a(href="#")
-    +article-social-icon-label('article-tweeter', 'tweeter share', '59', '20')
-  a(href="#")
-    +article-social-icon-label('article-gplus', 'google plus share', '27', '20')
-  a(href="#")
-    +article-social-icon-label('article-in', 'in share', '20', '20')
-  span If you like the article, please, like it or share it!
+.article__social
+  .article__social-icons
+    .article__social-icons-facebook
+      <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwww.facebook.com%2Fdigitalkward%2Fposts%2F10161040838130472&layout=button_count&size=small&width=119&height=20&appId" width="119" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+    .article__social-icons-twitter
+      <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Hello%20world"> Tweet</a>
+    .article__social-icons-linkedin
+      <script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
+      <script type="IN/Share" data-url="https://www.linkedin.com"></script>
+  .article__social-caption
+    p If you like the article, please, like it or share it!

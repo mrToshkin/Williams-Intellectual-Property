@@ -39,4 +39,11 @@ $(document).ready(function() {
     });
   };
   formValidate();
+
+  //----- click Ok for return form ---------//
+  $('.form__button--ok').on('click', function(e) {
+    e.preventDefault;
+    $('.form__send').css('display', 'block');
+    $('.form__accepted').css('display', 'none');
+  });
 });

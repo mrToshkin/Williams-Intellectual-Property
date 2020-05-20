@@ -110,12 +110,10 @@
     padding: 9px 10px;
 
     text-transform: uppercase;
-    color: $white;
-    opacity: 0.8;
+    color: rgba($white, 0.8);
     transition: 0.1s;
     &:hover {
       color: $color-main;
-      opacity: 1;
       transition: 0.1s;
     }
   }
@@ -315,6 +313,15 @@
 }
 //----------------------end------------------------//
 
+//-------------color event current page------------//
+.who-we-are__header-background { .menu__item-link-who-we-are { color: rgba($white, 0.5); } }
+.what-we-do__header-background { .menu__item-link-what-we-do { color: rgba($white, 0.5); } }
+.patenting-process__header-background { .menu__item-link-patenting-process { color: rgba($white, 0.5); } }
+.faq__header-background { .menu__item-link-faq { color: rgba($white, 0.5); } }
+.fee-structure__header-background { .menu__item-link-fee-structure { color: rgba($white, 0.5); } }
+.contact__header-background { .menu__item-link-contact { color: rgba($white, 0.5); } }
+.submit-your-idea__header-background { .menu__item-link-submit-your-idea { color: rgba($white, 0.5); } }
+.blog__header-background { .menu__item-link-blog { color: rgba($white, 0.5); } }
 //----------------nav--sticky event----------------//
 .header__nav--sticky {
   @media (min-width: $desktope) {

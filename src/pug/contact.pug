@@ -12,14 +12,15 @@ block header
         .breadcrumbs
           ul.breadcrumbs__body
             li.breadcrumbs__item
-              a(href="http://localhost:3000/index.html").breadcrumbs__link Home
+              a(href="index.html").breadcrumbs__link Home
             li.breadcrumbs__item Contact
         article
-          h1 Contact
-          p.header__article-contact--bold Benjamin Williams, Registered Patent Agent, Reg. No. 70416
-          p.header__article-contact Office: (720) 328-5343
-          p.header__article-contact Fax: (720) 328-5297
-          p.header__article-contact ben@wip.net
+          address
+            h1 Contact
+            p.header__article-contact--bold Benjamin Williams, Registered Patent Agent, Reg. No. 70416
+            p.header__article-contact: a(href="tel:7203285343") Office: (720) 328-5343
+            p.header__article-contact: a(href="tel:7203285297") Fax: (720) 328-5297
+            p.header__article-contact: a(href="mailto:ben@wip.net") ben@wip.net
         .submenu.submenu__item-2.article__submenu
           a(href="#contact-us").submenu__item-link.js-popup-link 
             +icon("arrow", "14", "9")

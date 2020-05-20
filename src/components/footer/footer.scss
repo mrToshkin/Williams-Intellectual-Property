@@ -136,9 +136,9 @@
       display: flex;
       justify-content: space-between;
       align-items: flex-end;
-      margin-top: 23px;
+      margin-top: 32px;
     }
-    span {
+    span, .rating__caption {
       font-family: $font-note;
       font-size: 14px;
       line-height: 10px;
@@ -150,13 +150,16 @@
       line-height: 23px;
       color: $white;
     }
-    .company-info__phonenumber { color: rgba($color-main, 0.9); }
+    .company-info__phonenumber {
+      margin-top: 4px;
+      color: rgba($color-main, 0.9);
+    }
     .copyright { color: $white-op5; }
 
     .company-info__address {
       margin-top: 18px;
       @media (min-width: $desktope) {
-        margin-top: 5px;
+        margin-top: 10px;
       }
     }
     .copyright {
@@ -181,84 +184,66 @@
       }
     }
   }
+  .icon-footer__napp { fill: #CDCDCF; }
 }
 
+.rating {
+  position: relative;
 
-
-.icon-footer__napp { 
-  fill: $white-op8;
-  transition: 0.15s;
-  &:hover {
-    fill: $white-op5;
-    transition: 0.15s;
+  max-width: max-content;
+  padding: 0;
+  padding-right: 115px;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  border: none;
+  
+  &__caption { 
+    padding: 0;
+    white-space: nowrap;
   }
-  @media (min-width: $desktope) {
-    margin-left: 20px;
+  
+  &__group {
+    position: absolute;
+    bottom: -1px;
+    right: 8px;
+    width: 100px;
+    height: 17px;
+    background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 20 16' fill='rgb(217, 219, 221)' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M8 0L10 6.1H16L11.1429 10L12.9524 16L8 12.5L3.04762 16L4.85714 10L0 6.1H6.09524L8 0Z' fill='rgb(217, 219, 221)'/%3E%3C/svg%3E");
+    background-size: 20px auto;
+    background-repeat: repeat-x;
+
+    &:focus-within {
+      outline: 2px solid rgba($color-main, 0.5);
+      outline-offset: 0.2em;
+    }
+  }
+  
+  &__star {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    height: 17px;
+    font-size: inherit;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-size: 20px auto;
+    background-repeat: repeat-x;
+
+    &:focus { outline: none; }
+    &:nth-of-type(1) { z-index: 5; width: 20px; }
+    &:nth-of-type(2) { z-index: 4; width: 40px; }
+    &:nth-of-type(3) { z-index: 3; width: 60px; }  
+    &:nth-of-type(4) { z-index: 2; width: 80px; }
+    &:nth-of-type(5) { z-index: 1; width: 100px; }
   }
 }
-
-.company-info__stars {
-  display: inline-flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  transform: translateY(3px) ;
-
-  .icon-star {
-    width: 20px;
-    padding: 0 2px;
-    &:last-child {
-      margin-left: 6px;
-    }
-
-    fill: #D9DBDD;
-    transition: 0.15s;
-    &--golden {
-      fill: $color-main;
-      transition: 0.15s;
-    }
-  }
-
-  &:hover {
-    .icon-star {
-      fill: $white;
-      transition: 0.15s;
-      &--golden {
-        fill: $white;
-        transition: 0.15s;
-      }
-    }
-  }
-  .star-5:hover {
-    fill: $color-main;
-    ~.star-4, 
-    ~.star-3, 
-    ~.star-2, 
-    ~.star-1 {
-      fill: $color-main;
-    }
-  }
-  .star-4:hover {
-    fill: $color-main;
-    ~.star-3, 
-    ~.star-2, 
-    ~.star-1 {
-      fill: $color-main;
-    }
-  }
-  .star-3:hover {
-    fill: $color-main;
-    ~.star-2, 
-    ~.star-1 {
-      fill: $color-main;
-    }
-  }
-  .star-2:hover {
-    fill: $color-main; 
-    ~.star-1 {
-      fill: $color-main;
-    }
-  }
-  .star-1:hover {
-    fill: $color-main;
-  }
+.rating__star:hover,
+.rating__star:checked {
+  background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 20 16' fill='rgb(255, 225, 149)' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M8 0L10 6.1H16L11.1429 10L12.9524 16L8 12.5L3.04762 16L4.85714 10L0 6.1H6.09524L8 0Z' fill='rgb(255, 225, 149)'/%3E%3C/svg%3E");
+}
+.rating__star:hover ~ .rating__star {
+  background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 20 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M8 0L10 6.1H16L11.1429 10L12.9524 16L8 12.5L3.04762 16L4.85714 10L0 6.1H6.09524L8 0Z' fill='none'/%3E%3C/svg%3E");
 }

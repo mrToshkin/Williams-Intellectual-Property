@@ -177,8 +177,8 @@
       color: $white-op5;
     }
     .header__article-contact {
-      margin-top: 5px;
-      color: $color-main;
+      margin-top: 7px;
+      a { color: $color-main; }
       &--bold {
         font-weight: bold;
       }

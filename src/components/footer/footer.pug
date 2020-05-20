@@ -4,7 +4,7 @@
       nav.nav.footer__nav
         include ../nav/__menu
         .nav__submenu.submenu.submenu__item-5
-          a(href="http://localhost:3000/submit-your-idea.html").submenu__item-link
+          a(href="submit-your-idea.html").submenu__item-link
             +icon("arrow", "14", "9")
             span Submin your idea now
       .footer__social
@@ -22,13 +22,15 @@
           include ../__social-icons/footer__social-icons
       .footer__info
         .company-info
-          span.company-info__rating Company rating:
-            a(href="#").company-info__stars
-              +icon-class('star', 'star-5', '16', '16')
-              +icon-class('star', 'star-4', '16', '16')
-              +icon-class('star', 'star-3 icon-star--golden', '16', '16')
-              +icon-class('star', 'star-2 icon-star--golden', '16', '16')
-              +icon-class('star', 'star-1 icon-star--golden', '16', '16')
-          p.company-info__address Benjamin Williams, Registered Patent Agent, Reg. No. 70416
-          p.company-info__phonenumber Office: 1-888-357-1068. Fax: (720) 328-5297
+          fieldset.rating
+            legend.rating__caption Company rating:
+            .rating__group
+              input.rating__star(type="radio" name="rating" id="rating-1" value="1" aria-label="Company rating 1")
+              input.rating__star(type="radio" name="rating" id="rating-2" value="2" aria-label="Company rating 2")
+              input.rating__star(type="radio" name="rating" id="rating-3" value="3" aria-label="Company rating 3" checked)
+              input.rating__star(type="radio" name="rating" id="rating-4" value="4" aria-label="Company rating 4")
+              input.rating__star(type="radio" name="rating" id="rating-5" value="5" aria-label="Company rating 5")
+          address
+            p.company-info__address Benjamin Williams, Registered Patent Agent, Reg. No. 70416
+            p.company-info__phonenumber Office: 1-888-357-1068. Fax: (720) 328-5297
         p.copyright Developed by: Anton Strizhov

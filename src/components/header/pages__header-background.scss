@@ -153,7 +153,7 @@
     height: 470px;  
     opacity: 0.5;
     z-index: -3;
-    transform: translateZ(-4px) scale(3.05);
+    transform: translateZ(-3px) scale(3.05);
     background: url(../img/general/02_who-we-are--mobile@2x.jpg) bottom center no-repeat;
     background: url(../img/general/02_who-we-are--mobile@2x.webp) bottom center no-repeat;
     background-size: cover;
@@ -166,6 +166,7 @@
     }
     @media (min-width: $tablet) {
       height: 550px;
+      transform: translateZ(-4px) scale(3.05);
       background: url(../img/general/02_who-we-are--desktope.jpg) bottom center no-repeat;
       background: url(../img/general/02_who-we-are--desktope.webp) bottom center no-repeat;
       background-size: cover;
@@ -221,7 +222,7 @@
     height: 470px;  
     opacity: 0.5;
     z-index: -3;
-    transform: translateZ(-4px) scale(3.05);
+    transform: translateZ(-3px) scale(3.05);
     background: url(../img/general/03_what-we-do--mobile.jpg) bottom center no-repeat;
     background: url(../img/general/03_what-we-do--mobile.webp) bottom center no-repeat;
     background-size: cover;
@@ -234,6 +235,7 @@
     }
     @media (min-width: $tablet) {
       height: 550px;
+      transform: translateZ(-4px) scale(3.05);
       background: url(../img/general/03_what-we-do--desktope.jpg) bottom center no-repeat;
       background: url(../img/general/03_what-we-do--desktope.webp) bottom center no-repeat;
       background-size: cover;
@@ -292,7 +294,7 @@
     height: 470px;  
     opacity: 0.5;
     z-index: -3;
-    transform: translateZ(-4px) scale(3.05);
+    transform: translateZ(-3px) scale(3.05);
     background: url(../img/general/03a_utility-patents--mobile.jpg) bottom center no-repeat;
     background: url(../img/general/03a_utility-patents--mobile.webp) bottom center no-repeat;
     background-size: cover;
@@ -305,6 +307,7 @@
     }
     @media (min-width: $tablet) {
       height: 550px;
+      transform: translateZ(-4px) scale(3.05);
       background: url(../img/general/03a_utility-patents--desktope.jpg) bottom center no-repeat;
       background: url(../img/general/03a_utility-patents--desktope.webp) bottom center no-repeat;
       background-size: cover;
@@ -363,7 +366,7 @@
     height: 470px;  
     opacity: 0.5;
     z-index: -3;
-    transform: translateZ(-4px) scale(3.05);
+    transform: translateZ(-3px) scale(3.05);
     background: url(../img/general/04_patenting-process--mobile.jpg) bottom center no-repeat;
     background: url(../img/general/04_patenting-process--mobile.webp) bottom center no-repeat;
     background-size: cover;
@@ -376,6 +379,7 @@
     }
     @media (min-width: $tablet) {
       height: 550px;
+      transform: translateZ(-4px) scale(3.05);
       background: url(../img/general/04_patenting-process--desktope.jpg) bottom center no-repeat;
       background: url(../img/general/04_patenting-process--desktope.webp) bottom center no-repeat;
       background-size: cover;
@@ -434,7 +438,7 @@
     height: 470px;  
     opacity: 0.5;
     z-index: -3;
-    transform: translateZ(-4px) scale(3.05);
+    transform: translateZ(-3px) scale(3.05);
     background: url(../img/general/05_free-structure--mobile.jpg) bottom center no-repeat;
     background: url(../img/general/05_free-structure--mobile.webp) bottom center no-repeat;
     background-size: cover;
@@ -447,6 +451,7 @@
     }
     @media (min-width: $tablet) {
       height: 550px;
+      transform: translateZ(-4px) scale(3.05);
       background: url(../img/general/05_free-structure--desktope.jpg) bottom center no-repeat;
       background: url(../img/general/05_free-structure--desktope.webp) bottom center no-repeat;
       background-size: cover;
@@ -502,7 +507,7 @@
     height: 470px;  
     opacity: 0.5;
     z-index: -3;
-    transform: translateZ(-4px) scale(3.05);
+    transform: translateZ(-3px) scale(3.05);
     background: url(../img/general/06-faq--mobile.jpg) bottom center no-repeat;
     background: url(../img/general/06-faq--mobile.webp) bottom center no-repeat;
     background-size: cover;
@@ -515,6 +520,7 @@
     }
     @media (min-width: $tablet) {
       height: 550px;
+      transform: translateZ(-4px) scale(3.05);
       background: url(../img/general/06-faq--desktope.jpg) bottom center no-repeat;
       background: url(../img/general/06-faq--desktope.webp) bottom center no-repeat;
       background-size: cover;
@@ -573,7 +579,7 @@
     height: 470px;  
     opacity: 0.5;
     z-index: -3;
-    transform: translateZ(-4px) scale(3.05);
+    transform: translateZ(-3px) scale(3.05);
     background: url(../img/general/07_blog--mobile.jpg) bottom center no-repeat;
     background: url(../img/general/07_blog--mobile.webp) bottom center no-repeat;
     background-size: cover;
@@ -586,6 +592,7 @@
     }
     @media (min-width: $tablet) {
       height: 550px;
+      transform: translateZ(-4px) scale(3.05);
       background: url(../img/general/07_blog--desktope.jpg) bottom center no-repeat;
       background: url(../img/general/07_blog--desktope.webp) bottom center no-repeat;
       background-size: cover;
@@ -709,7 +716,7 @@
     height: 470px;  
     opacity: 0.5;
     z-index: -3;
-    transform: translateZ(-4px) scale(3.05);
+    transform: translateZ(-3px) scale(3.05);
     background: url(../img/general/08_contact--mobile.jpg) bottom center no-repeat;
     background: url(../img/general/08_contact--mobile.webp) bottom center no-repeat;
     background-size: cover;
@@ -722,6 +729,7 @@
     }
     @media (min-width: $tablet) {
       height: 550px;
+      transform: translateZ(-4px) scale(3.05);
       background: url(../img/general/08_contact--desktope.jpg) bottom center no-repeat;
       background: url(../img/general/08_contact--desktope.webp) bottom center no-repeat;
       background-size: cover;
@@ -782,7 +790,7 @@
     height: 520px;  
     opacity: 0.5;
     z-index: -3;
-    transform: translateZ(-4px) scale(3.05);
+    transform: translateZ(-3px) scale(3.05);
     background: url(../img/general/09_submit-your-idea-now--mobile.jpg) bottom center no-repeat;
     background: url(../img/general/09_submit-your-idea-now--mobile.webp) bottom center no-repeat;
     background-size: cover;
@@ -795,6 +803,7 @@
     }
     @media (min-width: $tablet) {
       height: 550px;
+      transform: translateZ(-4px) scale(3.05);
       background: url(../img/general/09_submit-your-idea-now--desktope.jpg) bottom center no-repeat;
       background: url(../img/general/09_submit-your-idea-now--desktope.webp) bottom center no-repeat;
       background-size: cover;
@@ -855,7 +864,7 @@
     height: 470px;  
     opacity: 0.5;
     z-index: -3;
-    transform: translateZ(-4px) scale(3.05);
+    transform: translateZ(-3px) scale(3.05);
     background: url(../img/general/11_404--desktope.jpg) bottom center no-repeat;
     background: url(../img/general/11_404--desktope.webp) bottom center no-repeat;
     background-size: contain;
@@ -870,6 +879,7 @@
     }
     @media (min-width: $tablet) {
       height: 550px;
+      transform: translateZ(-4px) scale(3.05);
       background: url(../img/general/11_404--desktope.jpg) bottom center no-repeat;
       background: url(../img/general/11_404--desktope.webp) bottom center no-repeat;
       background-size: contain;
@@ -934,7 +944,7 @@
     height: 470px;  
     opacity: 0.5;
     z-index: -3;
-    transform: translateZ(-4px) scale(3.05);
+    transform: translateZ(-3px) scale(3.05);
     background: url(../img/general/12_thank-you--mobile.jpg) bottom center no-repeat;
     background: url(../img/general/12_thank-you--mobile.webp) bottom center no-repeat;
     background-size: cover;
@@ -947,6 +957,7 @@
     }
     @media (min-width: $tablet) {
       height: 550px;
+      transform: translateZ(-4px) scale(3.05);
       background: url(../img/general/12_thank-you--desktope.jpg) bottom center no-repeat;
       background: url(../img/general/12_thank-you--desktope.webp) bottom center no-repeat;
       background-size: cover;

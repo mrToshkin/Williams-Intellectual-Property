@@ -29,7 +29,7 @@ sass.compiler = require('node-sass');
 gulp.task('scss', () => {
   return gulp.src('./src/scss/styles.scss')
     .pipe(plumber())
-    .pipe(sourcemaps.init())
+    /* .pipe(sourcemaps.init()) */
     .pipe(sass())
     .pipe(autoprefixer({
       overrideBrowserslist:  ['last 3 versions'],
@@ -40,7 +40,7 @@ gulp.task('scss', () => {
     .pipe(browserSync.reload({ stream: true }))
     .pipe(replace('/*! normalize.css', '/* normalize.css'))
     .pipe(csso())
-    .pipe(sourcemaps.write())
+    /* .pipe(sourcemaps.write()) */
     .pipe(rename('styles.min.css'))
     .pipe(gulp.dest('./build/css'));
 });
