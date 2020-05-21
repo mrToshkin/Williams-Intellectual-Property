@@ -120,10 +120,11 @@
     }
     input {
       position: absolute;
-      opacity: 0;
       cursor: pointer;
-      height: 0;
-      width: 0;
+      height: 1px;
+      width: 1px;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
     }
     .checkmark {
       position: absolute;
@@ -179,10 +180,11 @@
     }
     input {
       position: absolute;
-      opacity: 0;
       cursor: pointer;
-      height: 0;
-      width: 0;
+      height: 1px;
+      width: 1px;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
     }
     .checkmark {
       position: absolute;
