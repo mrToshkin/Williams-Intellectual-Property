@@ -1,5 +1,7 @@
+'use strict';
+
 $(document).ready(function() {
-  var navMenu = document.querySelector('.header__nav'),
+  let navMenu = document.querySelector('.header__nav'),
       burger = document.querySelector('.burger'),
       widthTablet = window.matchMedia('(max-width: 1399px)'); // media query list
 
@@ -37,10 +39,12 @@ $(document).ready(function() {
       navMenu.classList.add('header__nav--menu-opened');
       $('.wrapper-parallax').height($('.bg-mobile-menu').height());
       $('.wrapper-parallax').css('overflow-y', 'hidden');
+      burger.setAttribute('aria-expanded', true);
     } else {
       navMenu.classList.add('header__nav--menu-closed');
       navMenu.classList.remove('header__nav--menu-opened');
       $('.wrapper-parallax').removeAttr('style')
+      burger.setAttribute('aria-expanded', false);
     }
   });
 });

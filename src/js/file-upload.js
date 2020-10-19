@@ -1,13 +1,15 @@
+'use strict';
+
 $(document).ready(function() {
   $(function() {
-    var countFiles = 1,
+    let countFiles = 1,
         $body = $('body'),
         typeFileArea = ['txt', 'doc', 'docx', 'jpg', 'pdf'],
         countTypeFiles = typeFileArea.length;
   
     //create new element
     $body.on('click', '.file-upload label', function() {
-      var wrapFiles = $('.file-upload'),
+      let wrapFiles = $('.file-upload'),
           newFileInput;
   
       countFiles = wrapFiles.data('count-files') + 1;
@@ -29,7 +31,7 @@ $(document).ready(function() {
   
     //show text file and check type file
     $body.on('change', 'input[type="file"]', function() {
-      var $this = $(this),
+      let $this = $(this),
           valText = $this.val(),
           fileName = valText.split(/(\\|\/)/g).pop(),
           fileItem = $this.siblings('.file-upload__attached-file'),
@@ -39,7 +41,7 @@ $(document).ready(function() {
       fileItem.find('.attached-file__file-name').text(fileName);
       if (valText != '') {
         fileItem.removeClass('hide-btn');
-        for (var i = 0; i < countTypeFiles; i++) {  
+        for (let i = 0; i < countTypeFiles; i++) {  
           if (typeFile == typeFileArea[i]) {
             $this.parent().addClass('has-mach');
           }
@@ -54,7 +56,7 @@ $(document).ready(function() {
   
     //remove file
     $body.on('click', '.attached-file__button-delete-file', function() {
-      var elem = $(this).closest('.one-file');
+      let elem = $(this).closest('.one-file');
       elem.fadeOut(400);
       setTimeout(function() {
         elem.remove();

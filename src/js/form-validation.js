@@ -1,5 +1,7 @@
+'use strict';
+
 $(document).ready(function() {
-  var formValidate = function() {
+  let formValidate = function() {
     $('form').each(function() {
       $(this).on('submit', function() {
         $(this).validate({
@@ -28,7 +30,7 @@ $(document).ready(function() {
           }
         });
         if ($(this).valid()) {
-          var wrap = $(this)[0].closest('.form__send');
+          let wrap = $(this)[0].closest('.form__send');
           if (wrap) {
             $(wrap).siblings('.form__accepted').show();
             $(wrap).hide();

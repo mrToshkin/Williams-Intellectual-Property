@@ -1,3 +1,5 @@
+'use strict';
+
 $(document).ready(function() {
   $('.form__input-checkbox--shower-block').change(function(){
     if($(this).is(":checked")) {

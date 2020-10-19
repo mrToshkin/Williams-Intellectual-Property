@@ -1,10 +1,12 @@
+'use strict';
+
 $(document).ready(function() {
   // code for parallax effect
-  var stickyNavTop = $('.header__nav-catcher').offset().top;
-  var stickyNav = function(){
-  var scrollTop = $('.wrapper-parallax').scrollTop(); 
+  let stickyNavTop = $('.header__nav-catcher').offset().top;
+  let stickyNav = function(){
+    let scrollTop = $('.wrapper-parallax').scrollTop(); 
 			         
-  if (scrollTop > stickyNavTop) { 
+    if (scrollTop > stickyNavTop) { 
       $('.header__nav-catcher').addClass('header__nav--sticky');
       $('.icon-logo-changer').attr("srcset", "img/svg/logo-sticked.svg");
       $('.header__nav--sticky').css('top', scrollTop + 'px');
@@ -32,11 +34,11 @@ $(document).ready(function() {
 });
 
 /* // default code without parallax
-  var stickyNavTop = $('.header__nav-catcher').offset().top;
-  var stickyNav = function(){
-  var scrollTop = $(window).scrollTop(); 
+  let stickyNavTop = $('.header__nav-catcher').offset().top;
+  let stickyNav = function(){
+    let scrollTop = $(window).scrollTop(); 
 			         
-  if (scrollTop > stickyNavTop) { 
+    if (scrollTop > stickyNavTop) { 
       $('.header__nav-catcher').addClass('header__nav--sticky');
       $('.icon-logo-changer').attr("srcset", "img/svg/logo-sticked.svg");
     } else {

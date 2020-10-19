@@ -1,7 +1,7 @@
+'use strict';
+
 $(document).ready(function() {
-
   /* $('.review-item').removeAttr('style'); */
-
   $('.slider-reviews__items').slick({
     prevArrow: '.slider-reviews__nav--prev',
     nextArrow: '.slider-reviews__nav--next',
